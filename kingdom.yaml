@@ -1,0 +1,21 @@
+name: Stagia
+court:
+  ruler:
+    name: Meredith Wander
+    bonus: 5
+  councilor:
+    name: Svetlana
+    # Uses +2 CHA headband
+    bonus: 4
+  general:
+    name: Stoltz
+    bonus: 5
+  grandDiplomat:
+    name: Lander
+    bonus: 3
+  highPriest:
+    name: Jhod
+    bonus: 4
+  magister:
+    name: Vanessa
+    bonus: 4
