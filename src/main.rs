@@ -10,6 +10,7 @@ struct KingdomEffects {
   infamy: u64,
   income: u64,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct SettlementEffects {
@@ -22,13 +23,18 @@ struct SettlementEffects {
   value: u64,
   defence: u64,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct Structure {
   name: String,
+  lots: u8,
+  #[serde(flatten)]
   settlement_effects: SettlementEffects,
+  #[serde(flatten)]
   kingdom_effects: KingdomEffects,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct SettlementEvent {
@@ -36,12 +42,14 @@ struct SettlementEvent {
   settlement_effects: SettlementEffects,
   kingdom_effects: KingdomEffects,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
-struct KingdomEvent {
-  name: String,
-  kingdom_effects: KingdomEffects,
+struct KingdomModifier {
+  cause: String,
+  effects: KingdomEffects,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct Settlement {
@@ -50,12 +58,14 @@ struct Settlement {
   structures: Vec<Structure>,
   events: Vec<SettlementEvent>,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct Courtier {
   name: String,
   bonus: u64,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct Court {
@@ -72,6 +82,7 @@ struct Court {
   viceroy: Option<Courtier>,
   warden: Option<Courtier>,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct Edicts {
@@ -79,18 +90,33 @@ struct Edicts {
   taxation: u64,
   festivals: u64,
 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 struct Kingdom {
   name: String,
-  court: Court,
+  claimed_hexes: u64,
+  farms: u64,
+  fisheries: u64,
+  sawmills: u64,
+  quarries: u64,
+  mines: u64,
+  roads: u64,
+  rivers: u64,
   edicts: Edicts,
-  settlements: Vec<Settlement>,
-  events: Vec<KingdomEvent>,
+  effects: Vec<KingdomEffects>,
 }
 
 fn main() {
   let buf = std::fs::read("./kingdom.yaml").unwrap();
   let kingdom: Kingdom = serde_yaml::from_slice(&buf).unwrap();
   println!("{}\n", serde_yaml::to_string(&kingdom).unwrap());
+
+  let buf = std::fs::read("./court.yaml").unwrap();
+  let court: Court = serde_yaml::from_slice(&buf).unwrap();
+  println!("{}\n", serde_yaml::to_string(&court).unwrap());
+
+  let buf = std::fs::read("./settlements.yaml").unwrap();
+  let settlements: Vec<Settlement> = serde_yaml::from_slice(&buf).unwrap();
+  println!("{}\n", serde_yaml::to_string(&settlements).unwrap());
 }

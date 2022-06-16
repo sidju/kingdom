@@ -1,0 +1,36 @@
+# Player characters:
+ruler:
+  name: Meredith Wander
+  bonus: 5 # based on Charisma
+general:
+  name: Stoltz
+  bonus: 5 # based on Strength or Charisma
+spymaster:
+  name: Devon
+  bonus: 4 # based on Dexterity or Intelligence
+treasurer:
+  name: Ethaelir
+  bonus: 3 # based on Intelligence or Wisdom
+# NPCs
+councilor:
+  name: Svetlana
+  # Uses +2 CHA headband
+  bonus: 4 # based on Wisdom or Charisma
+grandDiplomat:
+  name: Lander
+  bonus: 3 # based on Charisma or Intelligence
+highPriest:
+  name: Jhod
+  bonus: 4 # based on Charisma or Wisdom
+magister:
+  name: Vanessa
+  bonus: 4 # based on Charisma or Intelligence
+marshal:
+  name: Kesten Gerass
+  bonus: 2 # based on Dexterity or Wisdom
+royalEnforcer:
+  name: Kundal
+  bonus: 4 # based on Dexterity or Strength
+warden:
+  name: Akiros
+  bonus: 3 # based on Constitution or Strength

@@ -1,21 +1,22 @@
 name: Stagia
-court:
-  ruler:
-    name: Meredith Wander
-    bonus: 5
-  councilor:
-    name: Svetlana
-    # Uses +2 CHA headband
-    bonus: 4
-  general:
-    name: Stoltz
-    bonus: 5
-  grandDiplomat:
-    name: Lander
-    bonus: 3
-  highPriest:
-    name: Jhod
-    bonus: 4
-  magister:
-    name: Vanessa
-    bonus: 4
+edicts:
+  promotion: 2
+  taxation: 0
+  festivals: 1
+claimedHexes: 47
+farms: 27
+sawmills: 5
+quarries: 3
+mines: 2
+roads: 20
+rivers: 23
+modifiers:
+  - cause: Neutral good kingdom
+    effects:
+      loyalty: 2
+      stability: 2
+      lore: 1
+      society: 1
+  - cause: Stoltz's army (in capital)
+    effects:
+      income: -4

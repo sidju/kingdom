@@ -1,0 +1,80 @@
+- name: Stagia (capital)
+  walls: 2
+  districts: 3
+  structures:
+  # Central Stagia
+    - name: Stagia Castle
+      economy: 2
+      loyalty: 2
+      stability: 2
+      fame: 1
+      defence: 8
+    - name: Mill
+      economy: 1
+      stability: 1
+      productivity: 1
+    - name: Inn
+      economy: 1
+      loyalty: 1
+      society: 1
+      value: 500
+    - name: Foundry (Handles metal from goldmine)
+      economy: 2
+      stability: 1
+      income: 1
+      productivity: 1
+    - name: Weaponsmith
+      economy: 1
+      stability: 1
+    - name: Herbalist
+      # Magic item slot: 1 minor potion or wondrous item
+      # Miser's mask á 3000 gp
+      loyalty: 1
+      stability: 1
+    - name: Shrine of Erastil
+      loyalty: 1
+      # Magic item slot: 1 minor potion, scroll or wondrous item
+      # Potion of Owl's wisdom (CL 3)
+    - name: Barracks
+      law: 1
+      defence: 2
+    - name: Dragn's Workshop (Armorsmith)
+      # Magic item slot: 1 magic armour
+      # Adhesive Chainmail á 8150 gp
+      economy: 2
+      stability: 2
+    - name: Bocken's Shop (Alchemist)
+      # Magic item slot: 1 medium potion
+      # Potion of Blur (CL 3)
+      economy: 1
+      value: 1000
+    - name: Observatory
+      # Magic item slot: 1 minor scroll or wondrous
+      # Scroll of Inflict moderate wounds (CL 3)
+      stability: 1
+      lore: 1
+    - name: Munguk's Sunshine Brewery
+      loyalty: 1
+      stability: 1
+    - name: Library of Nethys
+      # Helm of Comprehend languages & Read magic
+      economy: 1
+      loyalty: 1
+      lore: 2
+    - name: Ropemakers (Trade Shop)
+      economy: 1
+      stability: 1
+      productivity: 1
+      value: 500
+    - name: Caster's tower
+      # 3 minor, 2 medium
+      # minor: Scroll of displacement
+      # major: Best of Equilibrium
+      economy: 1
+      loyalty: 1
+    - name: Pier
+      economy: 1
+      stability: 1
+      crime: 1
+      value: 1000
+  # Western Stagia
