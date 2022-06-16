@@ -20,3 +20,48 @@ modifiers:
   - cause: Stoltz's army (in capital)
     effects:
       income: -4
+  - cause: Gold vein under mine
+    effects:
+      economy: 2
+      income: 1
+  - cause: Dryad Tiressia's support
+    effects:
+      stability: 2
+  - cause: Landmark, Old Syccamore
+    effects:
+      stability: 1
+  - cause: Saved kidnapped child
+    effects:
+      loyalty: 2
+  - cause: Nixie Melianse keeps watch
+    effects:
+      stability: 2
+  - cause: Insulted that Nethys dude
+    effects:
+      fame: -1
+      infamy: 1
+  - cause: Silver vein under Soothscale mine
+    effects:
+      economy: 2
+      income: 1
+  - cause: Founding of Restov's Embassy
+    effects:
+      fame: 1
+  # Sighting of Grim White Stag
+  # Killed the Hydra in Candlemere (7 heads as trophies)
+  - cause: Discovery of Dwarven fort
+    effect:
+      lore: 3
+      fame: 1
+  - cause: Annex Varnhold
+    effect:
+      fame: 1
+  - cause: Visit from Cohen the Barbarian
+    effect:
+      fame: 1
+settlementPaths:
+  - stagia.yaml
+#  - soothscale-hold.yaml
+#  - varnhold.yaml
+#  - tatsilford.yaml
+
