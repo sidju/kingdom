@@ -31,9 +31,10 @@ structures:
     # Miser's mask á 3000 gp
     loyalty: 1
     stability: 1
-  - name: Shrine of Erastil
-    loyalty: 1
-    # Magic item slot: 1 minor potion, scroll or wondrous item
+  - name: Communal Temple
+    loyalty: 2
+    stability: 2
+    # Magic item slot: 2 minor
     # Potion of Owl's wisdom (CL 3)
   - name: Barracks
     law: 1
@@ -88,8 +89,8 @@ structures:
   - name: Shrine of Pharasma
     # Magic item slot: 1 minor potion, scroll or wondrous
     loyalty: 1
-  - name: Graveyard
-    loyalty: 1
+  - name: Graveyard x2
+    loyalty: 2
   - name: Noble Villa
     # Unused discount on Exotic artisan, Luxury store or Mansion
     lots: 2

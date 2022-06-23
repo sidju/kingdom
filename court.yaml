@@ -1,36 +1,48 @@
-# Player characters:
-ruler:
-  name: Meredith Wander
-  bonus: 5 # based on Charisma
-general:
-  name: Stoltz
-  bonus: 5 # based on Strength or Charisma
-spymaster:
-  name: Devon
-  bonus: 4 # based on Dexterity or Intelligence
-treasurer:
-  name: Ethaelir
-  bonus: 3 # based on Intelligence or Wisdom
+# Player characters
+- name: Meredith Wander
+  role: Ruler
+  bonus: # based on Charisma
+    loyalty: 5
+    stability: 5
+- name: Stoltz
+  role: General
+  bonus: # based on Strength or Charisma
+    stability: 5
+- name: Devon
+  role: Spymaster
+  bonus: # based on Dexterity or Intelligence
+    stability: 4
+- name: Ethaelir
+  role: Treasurer
+  bonus: # based on Intelligence or Wisdom
+    economy: 3
 # NPCs
-councilor:
-  name: Svetlana
+- name: Svetlana
+  role: Councilor
   # Uses +2 CHA headband
-  bonus: 4 # based on Wisdom or Charisma
-grandDiplomat:
-  name: Lander
-  bonus: 3 # based on Charisma or Intelligence
-highPriest:
-  name: Jhod
-  bonus: 4 # based on Charisma or Wisdom
-magister:
-  name: Vanessa
-  bonus: 4 # based on Charisma or Intelligence
-marshal:
-  name: Kesten Gerass
-  bonus: 2 # based on Dexterity or Wisdom
-royalEnforcer:
-  name: Kundal
-  bonus: 4 # based on Dexterity or Strength
-warden:
-  name: Akiros
-  bonus: 3 # based on Constitution or Strength
+  bonus: # based on Wisdom or Charisma
+    loyalty: 3
+- name: Lander
+  role: Grand Diplomat
+  bonus: # based on Charisma or Intelligence
+    stability: 3
+- name: Jhod
+  role: High Priest
+  bonus: # based on Charisma or Wisdom
+    stability: 4
+- name: Vanessa
+  role: Magister
+  bonus: # based on Charisma or Intelligence
+    economy: 4
+- name: Kesten Gerass
+  role: Marshal
+  bonus: # based on Dexterity or Wisdom
+    economy: 2
+- name: Kundal
+  role: Royal Enforcer
+  bonus: # based on Dexterity or Strength
+    loyalty: 4
+- name: Akiros
+  role: Warden
+  bonus: # based on Constitution or Strength
+    loyalty: 3

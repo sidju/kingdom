@@ -3,13 +3,14 @@ edicts:
   promotion: 2
   taxation: 0
   festivals: 1
-claimedHexes: 47
-farms: 27
-sawmills: 5
-quarries: 3
-mines: 2
-roads: 20
-rivers: 23
+infrastructure:
+  claimedHexes: 50
+  farms: 28
+  sawmills: 5
+  quarries: 5
+  mines: 2
+  roads: 20
+  rivers: 23
 modifiers:
   - cause: Neutral good kingdom
     effects:
