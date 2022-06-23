@@ -29,6 +29,7 @@ fn main() {
   let data = get_data();
 
   let size = get_size(&data);
+  let control_dc = size + 20;
 
-  println!("{}", size);
+  println!("Size: {size}\nControl DC: {control_dc}");
 }
