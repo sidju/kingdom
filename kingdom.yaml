@@ -62,7 +62,6 @@ modifiers:
       fame: 1
 settlementPaths:
   - stagia.yaml
-#  - soothscale-hold.yaml
-#  - varnhold.yaml
-#  - tatsilford.yaml
-
+  - soothscale-hold.yaml
+  - varnhold.yaml
+  - tatsilford.yaml

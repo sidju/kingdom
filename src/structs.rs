@@ -105,13 +105,9 @@ pub struct Kingdom {
   pub name: String,
   pub infrastructure: Infrastructure,
   pub edicts: Edicts,
+  pub court: Vec<Courtier>,
+  pub settlements: Vec<Settlement>,
   pub modifiers: Vec<KingdomEffects>,
   #[serde(alias = "settlements")]
   pub settlement_paths: Vec<String>,
-}
-
-pub struct Wrapper {
-  pub kingdom: Kingdom,
-  pub court: Vec<Courtier>,
-  pub settlements: Vec<Settlement>,
 }
