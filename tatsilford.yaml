@@ -1,5 +1,60 @@
-name: Tatsilford.yaml
+name: Tatsilford
 walls: 0
 districts: 1
-structures: []
-events: []
+structures:
+  - name: Houses, x 4
+  - name: Thrill seekers dance hall
+    economy: 1
+    loyalty: 2
+    corruption: 1
+    crime: 1
+  - name: Temple of Erastil
+    # Magic item slot: 2 minor
+    # Boots of Winterlands, Ring of Counterspells
+    loyalty: 2
+    stability: 2
+  - name: Skunkriver bridge
+  - name: Town Hall
+    economy: 1
+    loyalty: 1
+    stability: 1
+    law: 1
+  - name: Brewery
+    loyalty: 1
+    stability: 1
+  - name: General store
+    economy: 1
+    productivity: 1
+    value: 500
+  - name: Abel's Inn
+    economy: 1
+    loyalty: 1
+    society: 1
+    value: 500
+  - name: Tatsilford Library
+    economy: 1
+    loyalty: 1
+    lore: 1
+  - name: Jeweller (Trade shop)
+    economy: 1
+    stability: 1
+    productivity: 1
+    value: 500
+  - name: Smithy
+    economy: 1
+    stability: 1
+  - name: Tavern
+    economy: 1
+    loyalty: 1
+    corruption: 1
+    value: 500
+events:
+  - description: Pre-annexation events
+    corruption: -3
+    crime: -3
+    law: -1
+    lore: -1
+    productivity: -2
+  - description: Good trade
+    # Temporary bonus to economy, now gone
+    corruption: 3

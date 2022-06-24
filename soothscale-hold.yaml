@@ -1,5 +1,15 @@
 name: Soothscale Hold
 walls: 0
 districts: 1
-structures: []
+structures:
+  - name: House x 3
+  - name: Tenement x 3
+  - name: Foundry (handles metal from silvermine)
+    economy: 2
+    stability: 1
+    productivity: 1
+    income: 1
+  - name: Varask's Weaponsmithy
+    economy: 1
+    loyalty: 1
 events: []

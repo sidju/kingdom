@@ -72,7 +72,6 @@ pub struct SettlementEffects {
 #[serde(default, rename_all = "camelCase")]
 pub struct Structure {
   pub name: String,
-  pub lots: u8,
   #[serde(flatten)]
   pub settlement_effects: SettlementEffects,
   #[serde(flatten)]
