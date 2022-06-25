@@ -106,7 +106,7 @@ pub struct Kingdom {
   pub edicts: Edicts,
   pub court: Vec<Courtier>,
   pub settlements: Vec<Settlement>,
-  pub modifiers: Vec<KingdomEffects>,
+  pub modifiers: Vec<KingdomModifier>,
   #[serde(alias = "settlements")]
   pub settlement_paths: Vec<String>,
 }

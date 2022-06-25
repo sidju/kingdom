@@ -1,6 +1,9 @@
 mod structs;
 use structs::*;
 
+mod calculate;
+use calculate::*;
+
 fn get_data() -> Kingdom {
   let buf = std::fs::read("./kingdom.yaml").unwrap();
   let mut kingdom: Kingdom = serde_yaml::from_slice(&buf).unwrap();
@@ -17,19 +20,14 @@ fn get_data() -> Kingdom {
   kingdom
 }
 
-fn get_size(data: &Kingdom) -> i64 {
-  let mut size = data.infrastructure.claimed_hexes;
-  for s in &data.settlements {
-    size += s.districts;
-  }
-  size
-}
-
 fn main() {
   let data = get_data();
 
   let size = get_size(&data);
   let control_dc = size + 20;
+  let economy = get_economy(&data);
 
-  println!("Size: {size}\nControl DC: {control_dc}");
+  println!("Size: {size}");
+  println!("Control DC: {control_dc}");
+  println!("Economy: {economy}");
 }
