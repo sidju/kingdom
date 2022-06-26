@@ -60,3 +60,50 @@ pub fn get_loyalty(k: &Kingdom) -> i64 {
 
   loyalty
 }
+
+pub fn get_stability(k: &Kingdom) -> i64 {
+  let mut stab = 0;
+
+  stab += k.infrastructure.quarries;
+  stab += k.infrastructure.sawmills;
+  stab += k.infrastructure.roads / 8;
+  stab += k.infrastructure.rivers / 8;
+
+  for c in &k.court {
+    stab += c.bonus.stability;
+  }
+
+  for s in &k.settlements {
+    for b in &s.structures {
+      stab += b.kingdom_effects.stability;
+    }
+    for e in &s.events {
+      stab += e.kingdom_effects.stability;
+    }
+  }
+
+  for m in &k.modifiers {
+    stab += m.effects.stability;
+  }
+
+  stab
+}
+
+pub fn get_income(k: &Kingdom) -> i64 {
+  let mut inc = 0;
+
+  for s in &k.settlements {
+    for b in &s.structures {
+      inc += b.kingdom_effects.income;
+    }
+    for e in &s.events {
+      inc += e.kingdom_effects.income;
+    }
+  }
+
+  for m in &k.modifiers {
+    inc += m.effects.income;
+  }
+
+  inc
+}

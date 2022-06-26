@@ -27,9 +27,11 @@ fn main() {
   let control_dc = size + 20;
   let economy = get_economy(&data);
   let loyalty = get_loyalty(&data);
+  let stability = get_stability(&data);
 
   println!("Size: {size}");
   println!("Control DC: {control_dc}");
   println!("Economy: {economy}");
   println!("Loyalty: {loyalty}");
+  println!("Stability: {stability}");
 }

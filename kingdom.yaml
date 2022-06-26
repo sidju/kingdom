@@ -20,6 +20,9 @@ modifiers:
   - cause: Stoltz's army (in capital)
     effects:
       income: -4
+  - cause: Starting fame
+    effects:
+      fame: 1
   - cause: Gold vein under mine
     effects:
       economy: 2
@@ -50,10 +53,10 @@ modifiers:
   # Sighting of Grim White Stag
   # Killed the Hydra in Candlemere (7 heads as trophies)
   - cause: Annex Varnhold
-    effect:
+    effects:
       fame: 1
   - cause: Visit from Cohen the Barbarian
-    effect:
+    effects:
       fame: 1
 settlementPaths:
   - stagia.yaml

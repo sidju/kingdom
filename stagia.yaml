@@ -37,6 +37,7 @@ structures:
     # Medium: 
     loyalty: 4
     stability: 4
+    fame: 1
     law: 2
     lore: 1
   - name: Barracks
