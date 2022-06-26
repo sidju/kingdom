@@ -15,14 +15,6 @@ pub struct Infrastructure {
 
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
-pub struct Edicts {
-  pub promotion: i64,
-  pub taxation: i64,
-  pub festivals: i64,
-}
-
-#[derive(Default, Debug, Serialize, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
 pub struct CourtierBonus {
   pub economy: i64,
   pub loyalty: i64,
@@ -53,6 +45,7 @@ pub struct KingdomEffects {
   pub fame: i64,
   pub infamy: i64,
   pub income: i64,
+  pub consumption: i64,
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]
@@ -103,7 +96,6 @@ pub struct Settlement {
 pub struct Kingdom {
   pub name: String,
   pub infrastructure: Infrastructure,
-  pub edicts: Edicts,
   pub court: Vec<Courtier>,
   pub settlements: Vec<Settlement>,
   pub modifiers: Vec<KingdomModifier>,

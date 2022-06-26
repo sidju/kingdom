@@ -18,8 +18,6 @@ pub fn get_economy(k: &Kingdom) -> i64 {
   eco += k.infrastructure.roads / 4;
   eco += k.infrastructure.rivers / 4;
 
-  eco += k.edicts.taxation;
-
   for c in &k.court {
     eco += c.bonus.economy;
   }
@@ -38,4 +36,27 @@ pub fn get_economy(k: &Kingdom) -> i64 {
   }
 
   eco
+}
+
+pub fn get_loyalty(k: &Kingdom) -> i64 {
+  let mut loyalty = 0;
+
+  for c in & k.court {
+    loyalty += c.bonus.loyalty;
+  }
+
+  for s in &k.settlements {
+    for b in &s.structures {
+      loyalty += b.kingdom_effects.loyalty;
+    }
+    for e in &s.events {
+      loyalty += e.kingdom_effects.loyalty;
+    }
+  }
+
+  for m in &k.modifiers {
+    loyalty += m.effects.loyalty;
+  }
+
+  loyalty
 }

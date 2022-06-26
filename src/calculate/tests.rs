@@ -23,7 +23,6 @@ fn economy() {
   k.infrastructure.mines = 1;
   k.infrastructure.roads = 8;
   k.infrastructure.rivers = 16;
-  k.edicts.taxation = 1;
 
   let mut c = Courtier::default();
   c.bonus.economy = 4;
@@ -49,7 +48,40 @@ fn economy() {
 
   assert_eq!(
     get_economy(&k),
-    15,
+    14,
     "Economy is based on Court, Structures, Events and KingdomModifiers"
+  );
+}
+
+#[test]
+fn loyalty() {
+  let mut k = Kingdom::default();
+
+  let mut c = Courtier::default();
+  c.bonus.loyalty = 4;
+  k.court.push(c);
+
+  // Start building settlement
+  let mut s = Settlement::default();
+
+  let mut b = Structure::default();
+  b.kingdom_effects.loyalty = 1;
+  s.structures.push(b);
+
+  let mut e = SettlementEvent::default();
+  e.kingdom_effects.loyalty = 1;
+  s.events.push(e);
+
+  // Done building settlement, add to kingdom
+  k.settlements.push(s);
+
+  let mut m = KingdomModifier::default();
+  m.effects.loyalty = 1;
+  k.modifiers.push(m);
+
+  assert_eq!(
+    get_loyalty(&k),
+    7,
+    "Loyalty is based on Court, Structures, Events and KingdomModifiers"
   );
 }

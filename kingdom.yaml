@@ -1,8 +1,4 @@
 name: Stagia
-edicts:
-  promotion: 3
-  taxation: 0
-  festivals: 1
 infrastructure:
   claimedHexes: 50
   farms: 30
@@ -12,6 +8,15 @@ infrastructure:
   roads: 20
   rivers: 23
 modifiers:
+  - cause: Aggressive promotion edict
+    effects:
+      stability: 3
+      consumption: 2
+  - cause: No taxation
+  - cause: 1 Holiday
+    effects:
+      loyalty: 1
+      consumption: 1
   - cause: Stoltz's army (in capital)
     effects:
       income: -4
