@@ -1,4 +1,6 @@
 name: Stagia
+unrest: 4
+treasury: 37
 infrastructure:
   claimedHexes: 50
   farms: 30
