@@ -66,19 +66,19 @@ pub struct SettlementEffects {
 pub struct Structure {
   pub name: String,
   #[serde(flatten)]
-  pub settlement_effects: SettlementEffects,
+  pub s_effects: SettlementEffects,
   #[serde(flatten)]
-  pub kingdom_effects: KingdomEffects,
+  pub k_effects: KingdomEffects,
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
-pub struct SettlementEvent {
+pub struct Event {
   pub description: String,
   #[serde(flatten)]
-  pub settlement_effects: SettlementEffects,
+  pub s_effects: SettlementEffects,
   #[serde(flatten)]
-  pub kingdom_effects: KingdomEffects,
+  pub k_effects: KingdomEffects,
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]
@@ -88,7 +88,7 @@ pub struct Settlement {
   pub districts: i64,
   pub walls: i64,
   pub structures: Vec<Structure>,
-  pub events: Vec<SettlementEvent>,
+  pub events: Vec<Event>,
 }
 
 #[derive(Default, Debug, Serialize, Deserialize)]

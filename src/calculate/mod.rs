@@ -1,7 +1,7 @@
 use super::*;
 
 #[cfg(test)]
-mod tests;
+mod kingdom_tests;
 
 pub fn get_size(data: &Kingdom) -> i64 {
   let mut size = data.infrastructure.claimed_hexes;
@@ -24,10 +24,10 @@ pub fn get_economy(k: &Kingdom) -> i64 {
 
   for s in &k.settlements {
     for b in &s.structures {
-      eco += b.kingdom_effects.economy;
+      eco += b.k_effects.economy;
     }
     for e in &s.events {
-      eco += e.kingdom_effects.economy;
+      eco += e.k_effects.economy;
     }
   }
 
@@ -47,10 +47,10 @@ pub fn get_loyalty(k: &Kingdom) -> i64 {
 
   for s in &k.settlements {
     for b in &s.structures {
-      loyalty += b.kingdom_effects.loyalty;
+      loyalty += b.k_effects.loyalty;
     }
     for e in &s.events {
-      loyalty += e.kingdom_effects.loyalty;
+      loyalty += e.k_effects.loyalty;
     }
   }
 
@@ -75,10 +75,10 @@ pub fn get_stability(k: &Kingdom) -> i64 {
 
   for s in &k.settlements {
     for b in &s.structures {
-      stab += b.kingdom_effects.stability;
+      stab += b.k_effects.stability;
     }
     for e in &s.events {
-      stab += e.kingdom_effects.stability;
+      stab += e.k_effects.stability;
     }
   }
 
@@ -98,10 +98,10 @@ pub fn get_income(k: &Kingdom) -> i64 {
 
   for s in &k.settlements {
     for b in &s.structures {
-      inc += b.kingdom_effects.income;
+      inc += b.k_effects.income;
     }
     for e in &s.events {
-      inc += e.kingdom_effects.income;
+      inc += e.k_effects.income;
     }
   }
 
@@ -122,10 +122,10 @@ pub fn get_consumption(k: &Kingdom) -> i64 {
   for s in &k.settlements {
     con += s.districts;
     for b in &s.structures {
-      con += b.kingdom_effects.consumption;
+      con += b.k_effects.consumption;
     }
     for e in &s.events {
-      con += e.kingdom_effects.consumption;
+      con += e.k_effects.consumption;
     }
   }
 
@@ -134,4 +134,52 @@ pub fn get_consumption(k: &Kingdom) -> i64 {
   }
 
   con
+}
+
+pub fn get_fame(k: &Kingdom) -> i64 {
+  let mut fame = 0;
+  // Lore and society need to be summed, as they contribute at factor 1/10
+  let mut ls = 0;
+
+  for s in &k.settlements {
+    for b in &s.structures {
+      fame += b.k_effects.fame;
+      ls += b.s_effects.lore + b.s_effects.society;
+    }
+    for e in &s.events {
+      fame += e.k_effects.fame;
+      ls += e.s_effects.lore + e.s_effects.society;
+    }
+  }
+  fame += ls / 10;
+
+  for m in &k.modifiers {
+    fame += m.effects.fame;
+  }
+
+  fame
+}
+
+pub fn get_infamy(k: &Kingdom) -> i64 {
+  let mut infamy = 0;
+  // Crime and Corruption need to be summed, as they contribute at factor 1/10
+  let mut cc = 0;
+
+  for s in &k.settlements {
+    for b in &s.structures {
+      infamy += b.k_effects.infamy;
+      cc += b.s_effects.crime + b.s_effects.corruption;
+    }
+    for e in &s.events {
+      infamy += e.k_effects.infamy;
+      cc += e.s_effects.crime + e.s_effects.corruption;
+    }
+  }
+  infamy += cc / 10;
+
+  for m in &k.modifiers {
+    infamy += m.effects.infamy;
+  }
+
+  infamy
 }

@@ -30,6 +30,8 @@ fn main() {
   let stability = get_stability(&data);
   let income = get_income(&data);
   let consumption = get_consumption(&data);
+  let fame = get_fame(&data);
+  let infamy = get_infamy(&data);
 
   println!("Size: {size}");
   println!("Control DC: {control_dc}");
@@ -38,4 +40,6 @@ fn main() {
   println!("Stability: {stability}");
   println!("Income: {income}");
   println!("Consumption: {consumption}");
+  println!("Fame: {fame}");
+  println!("Infamy: {infamy}");
 }

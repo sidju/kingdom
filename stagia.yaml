@@ -122,10 +122,21 @@ events:
     society: 1
   - description: Small town rumors
     corruption: 1
+  - description: Dryad Tiressia's support
+    stability: 1
+  - description: Saved kidnapped child
+    loyalty: 2
+  - description: Nixie Melianse keeps watch
+    stability: 2
+  - description: Insulted that Nethys dude
+    fame: -1
+    infamy: 1
   - description: Archeological find
     lore: 1
   - description: Crypt research discovery
     lore: 3
+    fame: 1
+  - description: Founding of Restov's Embassy
     fame: 1
   - description: Justice prevailed, smugglers caught
     loyalty: 1
@@ -138,6 +149,10 @@ events:
     loyalty: 1
     crime: -1
     law: 1
+  # Sighting of Grim White Stag
+  # Killed the Hydra in candlemere
+  - description: Visited by Cohen the Barbarian
+    fame: 1
   - description: Land rush
     stability: -1
     productivity: -1

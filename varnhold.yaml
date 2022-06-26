@@ -48,4 +48,6 @@ structures:
   - name: Brewery
     loyalty: 1
     stability: 1
-events: []
+events:
+  - description: Annexed for Stagia
+    fame: 1

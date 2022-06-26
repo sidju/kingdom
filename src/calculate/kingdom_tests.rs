@@ -32,11 +32,11 @@ fn economy() {
   let mut s = Settlement::default();
 
   let mut b = Structure::default();
-  b.kingdom_effects.economy = 1;
+  b.k_effects.economy = 1;
   s.structures.push(b);
 
-  let mut e = SettlementEvent::default();
-  e.kingdom_effects.economy = 1;
+  let mut e = Event::default();
+  e.k_effects.economy = 1;
   s.events.push(e);
 
   // Done building settlement, add to kingdom
@@ -65,11 +65,11 @@ fn loyalty() {
   let mut s = Settlement::default();
 
   let mut b = Structure::default();
-  b.kingdom_effects.loyalty = 1;
+  b.k_effects.loyalty = 1;
   s.structures.push(b);
 
-  let mut e = SettlementEvent::default();
-  e.kingdom_effects.loyalty = 1;
+  let mut e = Event::default();
+  e.k_effects.loyalty = 1;
   s.events.push(e);
 
   // Done building settlement, add to kingdom
@@ -102,11 +102,11 @@ fn stability() {
   let mut s = Settlement::default();
 
   let mut b = Structure::default();
-  b.kingdom_effects.stability = 1;
+  b.k_effects.stability = 1;
   s.structures.push(b);
 
-  let mut e = SettlementEvent::default();
-  e.kingdom_effects.stability = 1;
+  let mut e = Event::default();
+  e.k_effects.stability = 1;
   s.events.push(e);
 
   // Done building settlement, add to kingdom
@@ -134,11 +134,11 @@ fn income() {
   let mut s = Settlement::default();
 
   let mut b = Structure::default();
-  b.kingdom_effects.income = 1;
+  b.k_effects.income = 1;
   s.structures.push(b);
 
-  let mut e = SettlementEvent::default();
-  e.kingdom_effects.income = 1;
+  let mut e = Event::default();
+  e.k_effects.income = 1;
   s.events.push(e);
 
   // Done building settlement, add to kingdom
@@ -167,11 +167,11 @@ fn consumption() {
   s.districts = 1;
 
   let mut b = Structure::default();
-  b.kingdom_effects.consumption = 1;
+  b.k_effects.consumption = 1;
   s.structures.push(b);
 
-  let mut e = SettlementEvent::default();
-  e.kingdom_effects.consumption = 1;
+  let mut e = Event::default();
+  e.k_effects.consumption = 1;
   s.events.push(e);
 
   // Done building settlement, add to kingdom
@@ -186,5 +186,77 @@ fn consumption() {
     7
 ,
     "Consumption is based on Infrastructure, Districts, Structures, Events and KingdomModifiers"
+  );
+}
+
+#[test]
+fn fame() {
+  let mut k = Kingdom::default();
+
+  // Start building settlement
+  let mut s = Settlement::default();
+
+  let mut b = Structure::default();
+  b.k_effects.fame = 1;
+  b.s_effects.lore = 2;
+  b.s_effects.society = 3;
+  s.structures.push(b);
+
+  let mut e = Event::default();
+  e.k_effects.fame = 1;
+  e.s_effects.lore = 3;
+  e.s_effects.society = 2;
+  s.events.push(e);
+
+  // Done buliding settlement, add to kingdom
+  k.settlements.push(s);
+
+  let mut m = KingdomModifier::default();
+  m.effects.fame = 1;
+  k.modifiers.push(m);
+
+  assert_eq!(
+    get_fame(&k),
+    4,
+    concat!(
+    "Fame is based on Structures, Events and KingdomModifiers. ",
+    "Note that Lore and Society influence it."
+    )
+  );
+}
+
+#[test]
+fn infamy() {
+  let mut k = Kingdom::default();
+
+  // Start building settlement
+  let mut s = Settlement::default();
+
+  let mut b = Structure::default();
+  b.k_effects.infamy = 1;
+  b.s_effects.corruption = 2;
+  b.s_effects.crime = 3;
+  s.structures.push(b);
+
+  let mut e = Event::default();
+  e.k_effects.infamy = 1;
+  e.s_effects.corruption = 3;
+  e.s_effects.crime = 2;
+  s.events.push(e);
+
+  // Done buliding settlement, add to kingdom
+  k.settlements.push(s);
+
+  let mut m = KingdomModifier::default();
+  m.effects.infamy = 1;
+  k.modifiers.push(m);
+
+  assert_eq!(
+    get_infamy(&k),
+    4,
+    concat!(
+    "Infamy is based on Structures, Events and KingdomModifiers. ",
+    "Note that Crime and Corruption influence it."
+    )
   );
 }
