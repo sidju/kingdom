@@ -92,6 +92,10 @@ pub fn get_stability(k: &Kingdom) -> i64 {
 pub fn get_income(k: &Kingdom) -> i64 {
   let mut inc = 0;
 
+  inc += k.infrastructure.quarries;
+  inc += k.infrastructure.sawmills;
+  inc += k.infrastructure.mines;
+
   for s in &k.settlements {
     for b in &s.structures {
       inc += b.kingdom_effects.income;
@@ -106,4 +110,28 @@ pub fn get_income(k: &Kingdom) -> i64 {
   }
 
   inc
+}
+
+pub fn get_consumption(k: &Kingdom) -> i64 {
+  let mut con = 0;
+
+  con += k.infrastructure.claimed_hexes;
+  con -= k.infrastructure.farms * 2;
+  con -= k.infrastructure.fisheries;
+
+  for s in &k.settlements {
+    con += s.districts;
+    for b in &s.structures {
+      con += b.kingdom_effects.consumption;
+    }
+    for e in &s.events {
+      con += e.kingdom_effects.consumption;
+    }
+  }
+
+  for m in &k.modifiers {
+    con += m.effects.consumption;
+  }
+
+  con
 }

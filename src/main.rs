@@ -28,10 +28,14 @@ fn main() {
   let economy = get_economy(&data);
   let loyalty = get_loyalty(&data);
   let stability = get_stability(&data);
+  let income = get_income(&data);
+  let consumption = get_consumption(&data);
 
   println!("Size: {size}");
   println!("Control DC: {control_dc}");
   println!("Economy: {economy}");
   println!("Loyalty: {loyalty}");
   println!("Stability: {stability}");
+  println!("Income: {income}");
+  println!("Consumption: {consumption}");
 }

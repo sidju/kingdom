@@ -126,6 +126,9 @@ fn stability() {
 #[test]
 fn income() {
   let mut k = Kingdom::default();
+  k.infrastructure.quarries = 1;
+  k.infrastructure.sawmills = 1;
+  k.infrastructure.mines = 1;
 
   // Start building settlement
   let mut s = Settlement::default();
@@ -147,7 +150,41 @@ fn income() {
 
   assert_eq!(
     get_income(&k),
-    3,
-    "Income is based on Structures, Events and KingdomModifiers"
+    6,
+    "Income is based on Infrastructure, Structures, Events and KingdomModifiers"
+  );
+}
+
+#[test]
+fn consumption() {
+  let mut k = Kingdom::default();
+  k.infrastructure.claimed_hexes = 10;
+  k.infrastructure.farms = 3;
+  k.infrastructure.fisheries = 1;
+
+  // Start building settlement
+  let mut s = Settlement::default();
+  s.districts = 1;
+
+  let mut b = Structure::default();
+  b.kingdom_effects.consumption = 1;
+  s.structures.push(b);
+
+  let mut e = SettlementEvent::default();
+  e.kingdom_effects.consumption = 1;
+  s.events.push(e);
+
+  // Done building settlement, add to kingdom
+  k.settlements.push(s);
+
+  let mut m = KingdomModifier::default();
+  m.effects.consumption = 1;
+  k.modifiers.push(m);
+
+  assert_eq!(
+    get_consumption(&k),
+    7
+,
+    "Consumption is based on Infrastructure, Districts, Structures, Events and KingdomModifiers"
   );
 }
