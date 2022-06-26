@@ -10,7 +10,8 @@ structures:
     crime: 1
   - name: Temple of Erastil
     # Magic item slot: 2 minor
-    # Boots of Winterlands, Ring of Counterspells
+    # Minor: Boots of Winterlands
+    # Minor: Ring of Counterspells
     loyalty: 2
     stability: 2
   - name: Skunkriver bridge

@@ -146,6 +146,6 @@ pub struct KingdomSummary {
 #[derive(Debug, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct Summary {
-  pub settlements: Vec<SettlementSummary>,
   pub kingdom: KingdomSummary,
+  pub settlements: Vec<SettlementSummary>,
 }

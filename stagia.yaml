@@ -4,6 +4,7 @@ districts: 3
 structures:
 # Central Stagia
   - name: Stagia Castle
+    lots: 4
     economy: 2
     loyalty: 2
     stability: 2
@@ -19,6 +20,7 @@ structures:
     society: 1
     value: 500
   - name: Foundry (Handles metal from goldmine)
+    lots: 2
     economy: 2
     stability: 1
     income: 1
@@ -28,13 +30,17 @@ structures:
     stability: 1
   - name: Herbalist
     # Magic item slot: 1 minor potion or wondrous item
-    # Miser's mask á 3000 gp
+    # Minor:
     loyalty: 1
     stability: 1
   - name: Cathedral of Irori (Knowledge)
     # Magic item slots: 3 minor potions or wondrous, 2 medium potions or wondrous
     # Minor: Wasp nest of Swarms
+    # Minor:
+    # Minor:
+    # Medium:
     # Medium: 
+    lots: 4
     loyalty: 4
     stability: 4
     fame: 1
@@ -44,17 +50,18 @@ structures:
     law: 1
     defence: 2
   - name: Dragn's Workshop (Armorsmith)
-    # Magic item slot: 1 magic armour
-    # Adhesive Chainmail á 8150 gp
+    # Magic item slot: 1 magic armor
+    # Armor: Adhesive Chainmail á 8150 gp
     economy: 2
     stability: 1
   - name: Bocken's Shop (Alchemist)
     # Magic item slot: 1 medium potion
-    # Oil of Flame Arrow
+    # Medium: Oil of Flame Arrow
     economy: 1
     value: 1000
   - name: Observatory
     # Magic item slot: 1 minor scroll or wondrous
+    # Minor:
     stability: 1
     lore: 1
   - name: Munguk's Sunshine Brewery
@@ -72,9 +79,12 @@ structures:
     productivity: 1
     value: 500
   - name: Caster's tower
-    # 3 minor, 2 medium
-    # minor: Potion of Resist Electricity (CL 3), Potion of Shield of Faith +3 (CL 6) 350gp
-    # major: Best of Equilibrium, Scroll of Locate Creature
+    # Magic item slots: 3 Minor, 2 Medium
+    # Minor: Potion of Resist Electricity (CL 3)
+    # Minor: Potion of Shield of Faith +3 (CL 6) 350gp
+    # Minor: 
+    # Medium: Best of Equilibrium
+    # Medium: Scroll of Locate Creature
     economy: 1
     loyalty: 1
   - name: Pier
@@ -87,21 +97,24 @@ structures:
     loyalty: 7
   - name: Shrine of Erastil
     # Magic item slot: 1 minor potion scroll or wondrous
-    # Braces of Armor +1
+    # Minor: Braces of Armor +1
     loyalty: 1
   - name: Shrine of Pharasma
     # Magic item slot: 1 minor potion, scroll or wondrous
+    # Minor:
     loyalty: 1
   - name: Graveyard x2
     loyalty: 2
   - name: Noble Villa
     # Unused discount on Exotic artisan, Luxury store or Mansion
+    lots: 2
     economy: 1
     loyalty: 1
     stability: 1
     society: 1
     fame: 1
   - name: Restov's Embassy
+    lots: 2
 # North Stagia
   - name: Shop
     economy: 1

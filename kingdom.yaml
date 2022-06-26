@@ -19,7 +19,7 @@ modifiers:
     effects:
       loyalty: 1
       consumption: 1
-  - cause: Stoltz's army (in capital)
+  - cause: Stoltz's large army (in capital)
     effects:
       income: -4
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
