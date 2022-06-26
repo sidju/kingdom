@@ -61,10 +61,14 @@ pub struct SettlementEffects {
   pub defence: i64,
 }
 
+fn one() -> i64 { 1 }
+
 #[derive(Default, Debug, Serialize, Deserialize)]
 #[serde(default, rename_all = "camelCase")]
 pub struct Structure {
   pub name: String,
+  #[serde(default = "one")]
+  pub lots: i64,
   #[serde(flatten)]
   pub s_effects: SettlementEffects,
   #[serde(flatten)]

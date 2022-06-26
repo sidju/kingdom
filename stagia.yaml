@@ -123,7 +123,7 @@ events:
   - description: Small town rumors
     corruption: 1
   - description: Dryad Tiressia's support
-    stability: 1
+    stability: 2
   - description: Saved kidnapped child
     loyalty: 2
   - description: Nixie Melianse keeps watch
