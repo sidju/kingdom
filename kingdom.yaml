@@ -1,14 +1,14 @@
 name: Stagia
-unrest: 0
-treasury: 41
+unrest: 1
+treasury: 37
 infrastructure:
-  claimedHexes: 50
+  claimedHexes: 52
   farms: 32
   sawmills: 6
   quarries: 5
   mines: 2
-  roads: 20
-  rivers: 24
+  roads: 24
+  rivers: 25
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -34,6 +34,7 @@ modifiers:
       income: 1
   - cause: Landmark, Old Syccamore
     effects:
+      loyalty: 2
       stability: 1
   - cause: Silver vein under Soothscale mine
     effects:
@@ -44,3 +45,4 @@ settlementPaths:
   - soothscale-hold.yaml
   - varnhold.yaml
   - tatsilford.yaml
+  - silverside.yaml

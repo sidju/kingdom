@@ -3,6 +3,7 @@ walls: 0
 districts: 1
 structures:
   - name: Houses, x 4
+    lots: 4
   - name: Thrill seekers dance hall
     economy: 1
     loyalty: 2

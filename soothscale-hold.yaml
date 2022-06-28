@@ -3,7 +3,9 @@ walls: 0
 districts: 1
 structures:
   - name: House x 4
+    lots: 4
   - name: Tenement x 2
+    lots: 2
   - name: Foundry (handles metal from silvermine)
     lots: 2
     economy: 2

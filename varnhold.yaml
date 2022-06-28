@@ -3,6 +3,7 @@ walls: 0
 districts: 1
 structures:
   - name: House x 8
+    lots: 8
   - name: Pottery (Trade shop)
     economy: 1
     stability: 1
@@ -35,7 +36,7 @@ structures:
     economy: 1
     stability: 1
   - name: Granary
-    # Holds 1 BP
+    # Holds 5 BP
     loyalty: 1
     stability: 1
   - name: Garrison

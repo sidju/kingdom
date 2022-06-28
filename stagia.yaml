@@ -30,16 +30,16 @@ structures:
     stability: 1
   - name: Herbalist
     # Magic item slot: 1 minor potion or wondrous item
-    # Minor:
+    # Minor: Oil of Misdirection
     loyalty: 1
     stability: 1
   - name: Cathedral of Irori (Knowledge)
     # Magic item slots: 3 minor potions or wondrous, 2 medium potions or wondrous
-    # Minor: Wasp nest of Swarms
-    # Minor:
-    # Minor:
-    # Medium:
+    # Medium: Oil of Levitate
     # Medium: 
+    # Minor: Wasp nest of Swarms
+    # Minor: Potion of Hide from Undead
+    # Minor: Cap of Light (900 gp)
     lots: 4
     loyalty: 4
     stability: 4
@@ -61,7 +61,7 @@ structures:
     value: 1000
   - name: Observatory
     # Magic item slot: 1 minor scroll or wondrous
-    # Minor:
+    # Minor: Scroll of Doom (divine)
     stability: 1
     lore: 1
   - name: Munguk's Sunshine Brewery
@@ -69,11 +69,11 @@ structures:
     stability: 1
   - name: Academy (of Nethys)
     # Magic item slots: 3 minor scrolls or wondrous, 2 medium scrolls or wondrous
-    # Medium: 
+    # Medium: Prestigitator's Cloak (+8 competence sleight of hand and more)
     # Medium:
-    # Minor: 
-    # Minor:
-    # Minor: 
+    # Minor: Scroll of Shocking Grasp
+    # Minor: Scroll of Bless
+    # Minor: Scroll of Chill Touch
     # Helm of Comprehend languages & Read magic
     # Scroll of Magic Missile (CL 1), Scroll of Sanctuary (CL 1)
     lots: 2
@@ -90,11 +90,11 @@ structures:
     value: 500
   - name: Caster's tower
     # Magic item slots: 3 Minor, 2 Medium
+    # Medium: Best of Equilibrium
+    # Medium: Scroll of Locate Creature
     # Minor: Potion of Resist Electricity (CL 3)
     # Minor: Potion of Shield of Faith +3 (CL 6) 350gp
     # Minor: 
-    # Medium: Best of Equilibrium
-    # Medium: Scroll of Locate Creature
     economy: 1
     loyalty: 1
   - name: Pier
@@ -111,7 +111,7 @@ structures:
     loyalty: 1
   - name: Shrine of Pharasma
     # Magic item slot: 1 minor potion, scroll or wondrous
-    # Minor:
+    # Minor: Potion of Protection from Law
     loyalty: 1
   - name: Graveyard x2
     loyalty: 2
@@ -130,8 +130,14 @@ structures:
     economy: 1
     productivity: 1
     value: 500
+  - name: Stable
+    economy: 1
+    loyalty: 1
+    value: 500
 # Somewhere in Stagia
-  - name: Houses
+  - name: House x 3
+    lots: 3
+  - name: Tenement (temporary)
 
 events:
   - description: Capital
@@ -177,3 +183,4 @@ events:
   - description: Visited by Cohen the Barbarian
     fame: 1
   - description: Land rush (consequences resolved)
+  - description: Eliminate drug ring

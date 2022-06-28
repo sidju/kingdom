@@ -1,0 +1,15 @@
+name: Silverside
+walls: 0
+districts: 1
+structures:
+  - name: House x 1
+    lots: 1
+  - name: Mim's Jewelry (Exotic artisan)
+    # Magic item slots: 1 minor ring or wondrous, 1 medium ring or
+    # Magic item slots: wondrous, 1 major ring
+    # Major: 
+    # Medium: 
+    # Minor: 
+    economy: 1
+    loyalty: 1
+events: []
