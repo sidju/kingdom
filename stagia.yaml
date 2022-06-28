@@ -9,7 +9,7 @@ structures:
     loyalty: 2
     stability: 2
     fame: 1
-    defence: 8
+    defense: 8
   - name: Mill
     economy: 1
     stability: 1
@@ -48,7 +48,7 @@ structures:
     lore: 1
   - name: Barracks
     law: 1
-    defence: 2
+    defense: 2
   - name: Dragn's Workshop (Armorsmith)
     # Magic item slot: 1 magic armor
     # Armor: Adhesive Chainmail á 8150 gp
@@ -67,12 +67,22 @@ structures:
   - name: Munguk's Sunshine Brewery
     loyalty: 1
     stability: 1
-  - name: Library of Nethys
+  - name: Academy (of Nethys)
+    # Magic item slots: 3 minor scrolls or wondrous, 2 medium scrolls or wondrous
+    # Medium: 
+    # Medium:
+    # Minor: 
+    # Minor:
+    # Minor: 
     # Helm of Comprehend languages & Read magic
     # Scroll of Magic Missile (CL 1), Scroll of Sanctuary (CL 1)
-    economy: 1
-    loyalty: 1
+    lots: 2
+    economy: 2
+    loyalty: 2
+    # +2 lore regarding arcane
     lore: 2
+    society: 2
+    productivity: 1
   - name: Ropemakers (Trade Shop)
     economy: 1
     stability: 1
@@ -166,7 +176,4 @@ events:
   # Killed the Hydra in candlemere
   - description: Visited by Cohen the Barbarian
     fame: 1
-  - description: Land rush
-    stability: -1
-    productivity: -1
-    society: -1
+  - description: Land rush (consequences resolved)

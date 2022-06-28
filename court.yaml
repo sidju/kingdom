@@ -11,7 +11,7 @@
 - name: Devon
   role: Spymaster
   bonus: # based on Dexterity or Intelligence
-    stability: 4
+    loyalty: 4
 - name: Ethaelir
   role: Treasurer
   bonus: # based on Intelligence or Wisdom
