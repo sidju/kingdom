@@ -1,7 +1,7 @@
 use serde::{Serialize, Deserialize};
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Infrastructure {
   pub claimed_hexes: i64,
   pub farms: i64,
@@ -14,7 +14,7 @@ pub struct Infrastructure {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct CourtierBonus {
   pub economy: i64,
   pub loyalty: i64,
@@ -22,7 +22,7 @@ pub struct CourtierBonus {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Courtier {
   pub name: String,
   pub role: String,
@@ -30,14 +30,14 @@ pub struct Courtier {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct KingdomModifier {
   pub cause: String,
   pub effects: KingdomEffects,
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct KingdomEffects {
   pub economy: i64,
   pub loyalty: i64,
@@ -49,7 +49,7 @@ pub struct KingdomEffects {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct SettlementEffects {
   pub corruption: i64,
   pub crime: i64,
@@ -64,7 +64,7 @@ pub struct SettlementEffects {
 fn one() -> i64 { 1 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Structure {
   pub name: String,
   #[serde(default = "one")]
@@ -76,7 +76,7 @@ pub struct Structure {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Event {
   pub description: String,
   #[serde(flatten)]
@@ -86,7 +86,7 @@ pub struct Event {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Settlement {
   pub name: String,
   pub districts: i64,
@@ -96,7 +96,7 @@ pub struct Settlement {
 }
 
 #[derive(Default, Debug, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
+#[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Kingdom {
   pub name: String,
   pub unrest: i64,
