@@ -1,13 +1,13 @@
 name: Stagia
-unrest: 1
-treasury: 37
+unrest: 0
+treasury: 33
 infrastructure:
-  claimedHexes: 52
+  claimedHexes: 54
   farms: 32
-  sawmills: 6
+  sawmills: 7
   quarries: 5
   mines: 2
-  roads: 24
+  roads: 25
   rivers: 25
 modifiers:
   - cause: Aggressive promotion edict
@@ -22,7 +22,10 @@ modifiers:
     effects:
       loyalty: 3
       consumption: 4
-  - cause: Stoltz's large army (in capital)
+  - cause: Large human army (in Tatsilford)
+    effects:
+      income: -4
+  - cause: Dwarven defenders army (in Capital)
     effects:
       income: -4
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)

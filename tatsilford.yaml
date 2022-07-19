@@ -1,5 +1,5 @@
 name: Tatsilford
-walls: 0
+walls: 4
 districts: 1
 structures:
   - name: Houses, x 4

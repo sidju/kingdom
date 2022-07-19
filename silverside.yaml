@@ -8,7 +8,7 @@ structures:
     # Magic item slots: 1 minor ring or wondrous, 1 medium ring or
     # Magic item slots: wondrous, 1 major ring
     # Major: 
-    # Medium: 
+    # Medium: Ring of Blinking (27000gp)
     # Minor: 
     economy: 1
     loyalty: 1

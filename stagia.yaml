@@ -36,7 +36,7 @@ structures:
   - name: Cathedral of Irori (Knowledge)
     # Magic item slots: 3 minor potions or wondrous, 2 medium potions or wondrous
     # Medium: Oil of Levitate
-    # Medium: 
+    # Medium: Potion of Shield of Faith +4 (600gp)
     # Minor: Wasp nest of Swarms
     # Minor: Potion of Hide from Undead
     # Minor: Cap of Light (900 gp)
@@ -94,7 +94,7 @@ structures:
     # Medium: Scroll of Locate Creature
     # Minor: Potion of Resist Electricity (CL 3)
     # Minor: Potion of Shield of Faith +3 (CL 6) 350gp
-    # Minor: 
+    # Minor: Composite longbow (Str 20) +1 (3300gp?)
     economy: 1
     loyalty: 1
   - name: Pier
@@ -134,6 +134,12 @@ structures:
     economy: 1
     loyalty: 1
     value: 500
+  - name: Menagerie
+    economy: 1
+    fame: 1
+    lots: 4
+    # Loyalty is 1/4 of the highest single creature's CR displayed within
+    loyalty: 1
 # Somewhere in Stagia
   - name: House x 3
     lots: 3
@@ -184,3 +190,4 @@ events:
     fame: 1
   - description: Land rush (consequences resolved)
   - description: Eliminate drug ring
+  - description: Lamashtu cleric Erika has relations with Munguk
