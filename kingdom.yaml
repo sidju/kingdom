@@ -1,14 +1,14 @@
 name: Stagia
 unrest: 0
-treasury: 33
+treasury: 47
 infrastructure:
-  claimedHexes: 54
-  farms: 32
+  claimedHexes: 58
+  farms: 36
   sawmills: 7
   quarries: 5
-  mines: 2
-  roads: 25
-  rivers: 25
+  mines: 3
+  roads: 27
+  rivers: 26
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -40,6 +40,10 @@ modifiers:
       loyalty: 2
       stability: 1
   - cause: Silver vein under Soothscale mine
+    effects:
+      economy: 2
+      income: 1
+  - cause: Gem vein under Silverside Mine
     effects:
       economy: 2
       income: 1

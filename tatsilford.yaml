@@ -50,6 +50,8 @@ structures:
     loyalty: 1
     corruption: 1
     value: 500
+  - name: Graveyard
+    loyalty: 1
 events:
   - description: Pre-annexation events
     corruption: -3
