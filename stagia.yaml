@@ -125,6 +125,16 @@ structures:
     fame: 1
   - name: Restov's Embassy
     lots: 2
+  - name: Ye Olde Magic Shop
+    # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
+    # Major: 
+    # Medium: 
+    # Minor: 
+    # Minor: 
+    # Minor: 
+    # Minor: 
+    economy: 1
+    value: 2000
 # North Stagia
   - name: Shop
     economy: 1
@@ -192,6 +202,8 @@ events:
   - description: Eliminate drug ring
   - description: Lamashtu cleric Erika has relations with Munguk
   - description: Boom-town
-    # Temporary economy bonus, until next event phase
-    economy: 15
     corruption: 4
+  - description: Old man Ned creates extradimensional space in library
+    fame: 1
+    # Temporary economy bonus, remove next event phase
+    economy: 4

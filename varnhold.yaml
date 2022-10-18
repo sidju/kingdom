@@ -36,7 +36,7 @@ structures:
     economy: 1
     stability: 1
   - name: Granary
-    # Holds 2 BP
+    # Holds 3 BP
     loyalty: 1
     stability: 1
   - name: Garrison
