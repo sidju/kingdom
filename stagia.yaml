@@ -145,11 +145,14 @@ structures:
     loyalty: 1
     value: 500
   - name: Menagerie
+    # Holds:
+    # Chimera, CR 7
+    # Dracolisk, CR 9
     economy: 1
     fame: 1
     lots: 4
     # Loyalty is 1/4 of the highest single creature's CR displayed within
-    loyalty: 1
+    loyalty: 2
 # Somewhere in Stagia
   - name: House x 3
     lots: 3
