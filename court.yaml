@@ -1,18 +1,26 @@
 # Player characters
 - name: Meredith Wander
+  titles:
+  - Bog friend
   role: Ruler
   bonus: # based on Charisma
     loyalty: 5
     stability: 5
 - name: Stoltz
+  titles:
+  - Bog friend
   role: General
   bonus: # based on Strength or Charisma
     stability: 5
 - name: Devon
+  titles:
+  - Bog friend
   role: Spymaster
   bonus: # based on Dexterity or Intelligence
     loyalty: 4
 - name: Ethaelir
+  titles:
+  - Bog friend
   role: Treasurer
   bonus: # based on Intelligence or Wisdom
     economy: 3

@@ -26,6 +26,7 @@ pub struct CourtierBonus {
 pub struct Courtier {
   pub name: String,
   pub role: String,
+  pub titles: Vec<String>,
   pub bonus: CourtierBonus,
 }
 
