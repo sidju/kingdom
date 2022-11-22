@@ -4,7 +4,7 @@ districts: 1
 structures:
   - name: House x 1
     lots: 1
-  - name: Mim's Jewelry (Exotic artisan)
+  - name: Mim's Jewelry (Exotic artisan, Mim Wobbelgander)
     # Magic item slots: 1 minor ring or wondrous, 1 medium ring or
     # Magic item slots: wondrous, 1 major ring
     # Major: Greater ring of Energy Resistance (44000gp) (30 resist electricity)

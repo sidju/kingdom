@@ -1,0 +1,67 @@
+# Lawful evil small town
+name: Hooktown
+walls: 2
+districts: 1
+structures:
+  - name: Barracks
+    defense: 1
+    law: 1
+  - name: The Velvet Corner (Brothel)
+    # Owned by Satinder Horn, Cleric of Calistria
+    economy: 1
+    loyalty: 2
+    corruption: 1
+    crime: 1
+  - name: Hooktown Keep (Castle)
+    economy: 2
+    loyalty: 2
+    stability: 2
+    fame: 1
+    defense: 8
+  - name: Iron Steeple Inn
+    economy: 1
+    loyalty: 1
+    value: 500
+    society: 1
+  - name: Pier
+    economy: 1
+    stability: 1
+    value: 1000
+    crime: 1
+  - name: Shop
+    economy: 1
+    value: 500
+    productivity: 1
+  - name: Shop
+    economy: 1
+    value: 500
+    productivity: 1
+  - name: The Rat's Shrine, (Of Hansbur)
+    # Magic item slot: 1 minor potion, scroll or wondrous
+    loyalty: 1
+  - name: Sutton's Smithy (Blacksmith)
+    economy: 1
+    stability: 1
+  - name: Sutton's Stable
+    economy: 1
+    loyalty: 1
+    value: 500
+  - name: Bellweather's Soup and Kettle (Tavern)
+    economy: 1
+    loyalty: 1
+    value: 500
+    corruption: 1
+  - name: Temple of Erastil
+    # Magic item slot: 2 minor
+    # Minor: 
+    # Minor: 
+    loyalty: 2
+    stability: 2
+  - name: Watch tower
+    stability: 1
+    defense: 2
+  - name: Houses x2
+  - name: tenements x4
+events:
+  - description: Strategic location
+    # TODO, fill out
