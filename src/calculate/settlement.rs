@@ -88,29 +88,45 @@ pub fn get_lots(s: &Settlement) -> i64 {
   lots
 }
 
-pub fn get_value(s: &Settlement) -> i64 {
-  let mut value = 0;
-
-  // Base from population
-  let lots = get_lots(s);
-  if lots > 100 {
-    value += 16000;
+pub fn get_size_estimate(s: &Settlement) -> SettlementSize {
+  // Estimate through population based on lots
+  // Since events should affect population and not all lots are likely to house
+  // the same density of population the simple estimate of 250 people per lot is
+  // likely to be overruled by GM as often as not.
+  let estimated_pop = get_lots(s) * 250;
+  if estimated_pop > 25_000 {
+    SettlementSize::Metropolis
   }
-  else if lots > 40 {
-    value += 8000;
+  else if estimated_pop > 10_000 {
+    SettlementSize::LargeCity
   }
-  else if lots > 20 {
-    value += 4000;
+  else if estimated_pop > 5_000 {
+    SettlementSize::SmallCity
   }
-  else if lots > 8 {
-    value += 2000;
+  else if estimated_pop > 2_000 {
+    SettlementSize::LargeTown
   }
-  else if lots > 0 {
-    value += 1000;
+  else if estimated_pop > 200 {
+    SettlementSize::SmallTown
   }
+  // The estimate is too imprecise to guess below village
   else {
-    value += 500;
+    SettlementSize::Village
   }
+}
+
+pub fn get_value(s: &Settlement) -> i64 {
+  // Base from settlement size
+  let mut value = match s.size {
+    SettlementSize::Thorpe => 50,
+    SettlementSize::Hamlet => 200,
+    SettlementSize::Village => 500,
+    SettlementSize::SmallTown => 1_000,
+    SettlementSize::LargeTown => 2_000,
+    SettlementSize::SmallCity => 4_000,
+    SettlementSize::LargeCity => 8_000,
+    SettlementSize::Metropolis => 16_000,
+  };
 
   // Sum from structures & events
   for b in &s.structures {
@@ -121,7 +137,34 @@ pub fn get_value(s: &Settlement) -> i64 {
   }
 
   value
-  
+}
+
+pub fn get_limit(s: &Settlement) -> i64 {
+  // Mapped from settlement size
+  match s.size {
+    SettlementSize::Thorpe => 50,
+    SettlementSize::Hamlet => 200,
+    SettlementSize::Village => 500,
+    SettlementSize::SmallTown => 1_000,
+    SettlementSize::LargeTown => 2_000,
+    SettlementSize::SmallCity => 4_000,
+    SettlementSize::LargeCity => 8_000,
+    SettlementSize::Metropolis => 16_000,
+  }
+}
+
+pub fn get_purchase_limit(s: &Settlement) -> i64 {
+  // Mapped from settlement size
+  match s.size {
+    SettlementSize::Thorpe => 500,
+    SettlementSize::Hamlet => 1_000,
+    SettlementSize::Village => 2_500,
+    SettlementSize::SmallTown => 5_000,
+    SettlementSize::LargeTown => 10_000,
+    SettlementSize::SmallCity => 25_000,
+    SettlementSize::LargeCity => 50_000,
+    SettlementSize::Metropolis => 100_000,
+  }
 }
 
 pub fn get_defense(s: &Settlement) -> i64 {

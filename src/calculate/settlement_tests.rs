@@ -133,26 +133,6 @@ fn lots() {
 }
 
 #[test]
-fn value() {
-  let mut s = Settlement::default();
-
-  let mut b = Structure::default();
-  b.lots = 2;
-  b.s_effects.value = 500;
-  s.structures.push(b);
-
-  let mut e = Event::default();
-  e.s_effects.value = 500;
-  s.events.push(e);
-
-  assert_eq!(
-    get_value(&s),
-    2000,
-    "Value is based on Structures and Events"
-  );
-}
-
-#[test]
 fn defence() {
   let mut s = Settlement::default();
   s.walls = 3;
@@ -169,5 +149,64 @@ fn defence() {
     get_defense(&s),
     6,
     "Defense is based on walls, Structures and Events"
+  );
+}
+
+#[test]
+fn purchase_limit() {
+  let mut s = Settlement::default();
+  s.size = SettlementSize::SmallTown;
+
+  assert_eq!(
+    get_purchase_limit(&s),
+    5000,
+    "Purchase limit is based on settlement's Size"
+  );
+}
+
+#[test]
+fn base_value() {
+  let mut s = Settlement::default();
+  s.size = SettlementSize::SmallTown;
+
+  let mut b = Structure::default();
+  b.s_effects.value = 500;
+  s.structures.push(b);
+
+  let mut e = Event::default();
+  e.s_effects.value = 500;
+  s.events.push(e);
+
+  assert_eq!(
+    get_value(&s),
+    2000,
+    "Base Value is based on settlement's Size, Structures and Events"
+  );
+}
+
+#[test]
+fn base_limit() {
+  let mut s = Settlement::default();
+  s.size = SettlementSize::Hamlet;
+
+  assert_eq!(
+    get_limit(&s),
+    200,
+    "Base Limit is based on settlement's Size"
+  );
+}
+
+#[test]
+fn size_estimate() {
+  let mut s = Settlement::default();
+
+  let mut b = Structure::default();
+  b.lots = 5;
+  s.structures.push(b);
+
+  assert_eq!(
+    get_size_estimate(&s),
+    SettlementSize::SmallTown,
+    "Size estimate is based on number of lots (population = around 250 * lots)"
   );
 }

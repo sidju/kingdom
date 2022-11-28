@@ -86,10 +86,26 @@ pub struct Event {
   pub k_effects: KingdomEffects,
 }
 
+#[derive(Debug, Deserialize, Serialize, PartialEq, Clone)]
+#[serde(rename_all = "camelCase")]
+pub enum SettlementSize {
+  Thorpe,
+  Hamlet,
+  Village,
+  SmallTown,
+  LargeTown,
+  SmallCity,
+  LargeCity,
+  Metropolis,
+}
+impl Default for SettlementSize {
+  fn default() -> Self { Self::Thorpe }
+}
 #[derive(Default, Debug, Deserialize)]
 #[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Settlement {
   pub name: String,
+  pub size: SettlementSize,
   pub districts: i64,
   pub walls: i64,
   pub structures: Vec<Structure>,
@@ -116,8 +132,12 @@ pub struct SettlementSummary {
   pub name: String,
   pub districts: i64,
   pub lots: i64,
-  pub population: i64,
-  pub value: i64,
+  pub size: SettlementSize,
+  pub size_estimate: SettlementSize,
+  pub population_estimate: i64,
+  pub base_value: i64,
+  pub base_limit: i64,
+  pub purchase_limit: i64,
   pub defense: i64,
   pub corruption: i64,
   pub crime: i64,
