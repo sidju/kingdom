@@ -49,8 +49,9 @@ modifiers:
       income: 1
 settlementPaths:
   - stagia.yaml
-  - soothscale-hold.yaml
+  - sootscale-hold.yaml
   - varnhold.yaml
-  - tatsilford.yaml
+  - tatzlford.yaml
   - silverside.yaml
   - hooktown.yaml
+
