@@ -4,26 +4,26 @@
   - Bog friend
   role: Ruler
   bonus: # based on Charisma
-    loyalty: 5
-    stability: 5
+    loyalty: 6
+    stability: 6
 - name: Stoltz
   titles:
   - Bog friend
   role: General
   bonus: # based on Strength or Charisma
-    stability: 5
+    stability: 6
 - name: Devon
   titles:
   - Bog friend
   role: Spymaster
   bonus: # based on Dexterity or Intelligence
-    loyalty: 4
+    loyalty: 5
 - name: Ethaelir
   titles:
   - Bog friend
   role: Treasurer
   bonus: # based on Intelligence or Wisdom
-    economy: 3
+    economy: 4
 # NPCs
 - name: Svetlana
   role: Councilor
