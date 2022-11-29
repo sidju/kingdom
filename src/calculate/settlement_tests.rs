@@ -157,10 +157,22 @@ fn purchase_limit() {
   let mut s = Settlement::default();
   s.size = SettlementSize::SmallTown;
 
+  let mut e = Event::default();
+  e.s_effects.purchase_limit_multiplier = 1.1;
+  s.events.push(e);
+  let e = Event::default();
+  s.events.push(e);
+
+  let mut b = Structure::default();
+  b.s_effects.purchase_limit_multiplier = 1.1;
+  s.structures.push(b);
+  let b = Structure::default();
+  s.structures.push(b);
+
   assert_eq!(
     get_purchase_limit(&s),
-    5000,
-    "Purchase limit is based on settlement's Size"
+    6000,
+    "Purchase limit is based on settlement's Size with multiplier bonus"
   );
 }
 
@@ -171,15 +183,21 @@ fn base_value() {
 
   let mut b = Structure::default();
   b.s_effects.value = 500;
+  b.s_effects.value_multiplier = 1.1;
+  s.structures.push(b);
+  let b = Structure::default();
   s.structures.push(b);
 
   let mut e = Event::default();
   e.s_effects.value = 500;
+  e.s_effects.value_multiplier = 1.1;
+  s.events.push(e);
+  let e = Event::default();
   s.events.push(e);
 
   assert_eq!(
     get_value(&s),
-    2000,
+    2200,
     "Base Value is based on settlement's Size, Structures and Events"
   );
 }

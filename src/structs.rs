@@ -49,7 +49,7 @@ pub struct KingdomEffects {
   pub consumption: i64,
 }
 
-#[derive(Default, Debug, Deserialize)]
+#[derive(Debug, Deserialize)]
 #[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct SettlementEffects {
   pub corruption: i64,
@@ -60,6 +60,24 @@ pub struct SettlementEffects {
   pub society: i64,
   pub value: i64,
   pub defense: i64,
+  pub value_multiplier: f64,
+  pub purchase_limit_multiplier: f64,
+}
+impl Default for SettlementEffects {
+  fn default() -> Self {
+    Self{
+      corruption: 0,
+      crime: 0,
+      law: 0,
+      lore: 0,
+      productivity: 0,
+      society: 0,
+      value: 0,
+      defense: 0,
+      value_multiplier: 1.0,
+      purchase_limit_multiplier: 1.0,
+    }
+  }
 }
 
 fn one() -> i64 { 1 }

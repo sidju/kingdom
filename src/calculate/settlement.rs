@@ -117,7 +117,7 @@ pub fn get_size_estimate(s: &Settlement) -> SettlementSize {
 
 pub fn get_value(s: &Settlement) -> i64 {
   // Base from settlement size
-  let mut value = match s.size {
+  let base_value = match s.size {
     SettlementSize::Thorpe => 50,
     SettlementSize::Hamlet => 200,
     SettlementSize::Village => 500,
@@ -128,15 +128,18 @@ pub fn get_value(s: &Settlement) -> i64 {
     SettlementSize::Metropolis => 16_000,
   };
 
+  let mut value = 0;
   // Sum from structures & events
   for b in &s.structures {
     value += b.s_effects.value;
+    value += ((b.s_effects.value_multiplier - 1.0) * base_value as f64) as i64;
   }
   for e in &s.events {
     value += e.s_effects.value;
+    value += ((e.s_effects.value_multiplier - 1.0) * base_value as f64) as i64;
   }
 
-  value
+  base_value + value
 }
 
 pub fn get_limit(s: &Settlement) -> i64 {
@@ -155,7 +158,7 @@ pub fn get_limit(s: &Settlement) -> i64 {
 
 pub fn get_purchase_limit(s: &Settlement) -> i64 {
   // Mapped from settlement size
-  match s.size {
+  let base_limit = match s.size {
     SettlementSize::Thorpe => 500,
     SettlementSize::Hamlet => 1_000,
     SettlementSize::Village => 2_500,
@@ -164,7 +167,17 @@ pub fn get_purchase_limit(s: &Settlement) -> i64 {
     SettlementSize::SmallCity => 25_000,
     SettlementSize::LargeCity => 50_000,
     SettlementSize::Metropolis => 100_000,
+  };
+
+  let mut limit = 0;
+  for b in &s.structures {
+    limit += ((b.s_effects.purchase_limit_multiplier - 1.0) * base_limit as f64) as i64;
   }
+  for e in &s.events {
+    limit += ((e.s_effects.purchase_limit_multiplier - 1.0) * base_limit as f64) as i64;
+  }
+
+  base_limit + limit
 }
 
 pub fn get_defense(s: &Settlement) -> i64 {
