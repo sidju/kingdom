@@ -10,7 +10,7 @@ structures:
     # Magic item slots: wondrous, 1 major ring
     # Major: Greater ring of Energy Resistance (44000gp) (30 resist electricity)
     # Medium: Ring of Blinking (27000gp)
-    # Minor: 
+    # Minor: Ring of Jumping
     economy: 1
     loyalty: 1
 events: []

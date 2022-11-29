@@ -1,14 +1,14 @@
 name: Stagia
 unrest: 0
-treasury: 56
+treasury: 51
 infrastructure:
-  claimedHexes: 65
+  claimedHexes: 68
   farms: 39
   sawmills: 7
   quarries: 5
   mines: 3
   roads: 37
-  rivers: 28
+  rivers: 30
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -30,7 +30,7 @@ modifiers:
       income: -4
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
-      fame: 4
+      fame: 5
   - cause: Gold vein under mine
     effects:
       economy: 2
@@ -47,6 +47,13 @@ modifiers:
     effects:
       economy: 2
       income: 1
+  - cause: Temple of the Elk (shrine stats)
+    effects:
+      loyalty: 1
+  - cause: Watchtower in mountainpass by Varnhold
+    # Considered as watchtower, the settlement building, locally
+    effects:
+      stability: 1
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml
