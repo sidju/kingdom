@@ -40,6 +40,7 @@
     stability: 4
 - name: Vanessa
   role: Magister
+  # Uses +2 CHA headband
   bonus: # based on Charisma or Intelligence
     economy: 4
 - name: Kesten Gerass
