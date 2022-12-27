@@ -123,7 +123,7 @@ impl Default for SettlementSize {
 #[serde(default, deny_unknown_fields, rename_all = "camelCase")]
 pub struct Settlement {
   pub name: String,
-  pub size: SettlementSize,
+  pub population: i64,
   pub districts: i64,
   pub walls: i64,
   pub structures: Vec<Structure>,
@@ -151,7 +151,7 @@ pub struct SettlementSummary {
   pub districts: i64,
   pub lots: i64,
   pub size: SettlementSize,
-  pub size_estimate: SettlementSize,
+  pub population: i64,
   pub population_estimate: i64,
   pub base_value: i64,
   pub base_limit: i64,

@@ -1,6 +1,6 @@
 # Lawful evil small town
 name: Hooktown
-size: smallCity
+population: 5130
 walls: 2
 districts: 1
 structures:

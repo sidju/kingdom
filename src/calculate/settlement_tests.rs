@@ -155,7 +155,7 @@ fn defence() {
 #[test]
 fn purchase_limit() {
   let mut s = Settlement::default();
-  s.size = SettlementSize::SmallTown;
+  s.population = 250;
 
   let mut e = Event::default();
   e.s_effects.purchase_limit_multiplier = 1.1;
@@ -179,7 +179,7 @@ fn purchase_limit() {
 #[test]
 fn base_value() {
   let mut s = Settlement::default();
-  s.size = SettlementSize::SmallTown;
+  s.population = 250;
 
   let mut b = Structure::default();
   b.s_effects.value = 500;
@@ -205,7 +205,7 @@ fn base_value() {
 #[test]
 fn base_limit() {
   let mut s = Settlement::default();
-  s.size = SettlementSize::Hamlet;
+  s.population = 30;
 
   assert_eq!(
     get_limit(&s),
@@ -215,16 +215,18 @@ fn base_limit() {
 }
 
 #[test]
-fn size_estimate() {
+fn size() {
   let mut s = Settlement::default();
 
-  let mut b = Structure::default();
-  b.lots = 5;
-  s.structures.push(b);
-
+  s.population = 300;
   assert_eq!(
-    get_size_estimate(&s),
-    SettlementSize::SmallTown,
-    "Size estimate is based on number of lots (population = around 250 * lots)"
+    get_settlement_size(&s),
+    SettlementSize::SmallTown
+  );
+
+  s.population = 50;
+  assert_eq!(
+    get_settlement_size(&s),
+    SettlementSize::Hamlet
   );
 }
