@@ -2,13 +2,13 @@ name: Stagia
 unrest: 0
 treasury: 51
 infrastructure:
-  claimedHexes: 68
-  farms: 39
+  claimedHexes: 72
+  farms: 43
   sawmills: 7
   quarries: 5
-  mines: 3
-  roads: 37
-  rivers: 30
+  mines: 4
+  roads: 39
+  rivers: 34
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -54,6 +54,9 @@ modifiers:
     # Considered as watchtower, the settlement building, locally
     effects:
       stability: 1
+  - cause: Mud east of Silverstep
+    effects:
+      economy: 1
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml
@@ -61,4 +64,3 @@ settlementPaths:
   - tatzlford.yaml
   - silverside.yaml
   - hooktown.yaml
-

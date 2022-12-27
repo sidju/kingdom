@@ -55,7 +55,7 @@ structures:
     corruption: 1
   - name: Temple of Erastil
     # Magic item slot: 2 minor
-    # Minor: 
+    # Minor: Page of Spell Knowledge (Fog cloud, 4000gp)
     # Minor: 
     loyalty: 2
     stability: 2

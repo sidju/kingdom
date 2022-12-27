@@ -134,14 +134,23 @@ structures:
     lots: 2
 # North Stagia
   - name: Stolen Tale's College (Bardic College)
+    # Magic item slots: 2 minor scrolls or wondrous
+    # Minor: Scoll of Obscure object (150gp)
+    # Minor: 
     lots: 2
     economy: 1
     loyalty: 3
     stability: 1
     fame: 1
-    # Magic item slots: 2 minor scrolls or wondrous
-    # Minor: 
-    # Minor: 
+  - name: Temporary theater (to upgrade to arena)
+    lots: 2
+    economy: 2
+    stability: 2
+  - name: Temporary trade shop (to upgrade to guild hall)
+    economy: 1
+    stability: 1
+    value: 500
+    productivity: 1
   - name: Shop
     economy: 1
     productivity: 1
@@ -152,7 +161,7 @@ structures:
     # Medium: Minor Cloak of Displacement (permanent blur) 24 000gp
     # Minor: 
     # Minor: Campfire bead 720gp
-    # Minor: 
+    # Minor: Daredevil Boots (1400gp)
     # Minor: Bag of Holding type 3 (7400 gp)
     economy: 1
     value: 2000
@@ -160,7 +169,7 @@ structures:
     economy: 1
     loyalty: 1
     value: 500
-  - name: Menagerie
+  - name: Menagerie, extra large enclosures
     # Holds:
     # Chimera, CR 7
     # Dracolisk, CR 9
