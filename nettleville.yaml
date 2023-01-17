@@ -1,0 +1,10 @@
+name: Nettleville
+population: 25
+districts: 1
+structures:
+  - name: Nettleville animal market
+    economy: 1
+    stability: -1
+    productivity: 1
+    # Improves adjacent farms
+    consumption: -7

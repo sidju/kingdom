@@ -1,6 +1,6 @@
 name: Stagia
 unrest: 0
-treasury: 51
+treasury: 53
 infrastructure:
   claimedHexes: 72
   farms: 43
@@ -22,12 +22,12 @@ modifiers:
     effects:
       loyalty: 3
       consumption: 4
-  - cause: Large human army (in Tatsilford)
+  - cause: Large human army (garrisoned in Hooktown)
     effects:
-      income: -4
-  - cause: Dwarven defenders army (in Capital)
+      income: -1
+  - cause: Dwarven defenders army (garrisoned in Capital)
     effects:
-      income: -4
+      income: -1
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
       fame: 5
@@ -64,3 +64,4 @@ settlementPaths:
   - tatzlford.yaml
   - silverside.yaml
   - hooktown.yaml
+  - nettleville.yaml

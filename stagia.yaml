@@ -1,7 +1,7 @@
 name: Stagia (capital)
-population: 11541
+population: 12541
 walls: 4
-districts: 3
+districts: 4
 structures:
 # Central Stagia
   - name: Paved streets
@@ -20,11 +20,6 @@ structures:
     economy: 1
     stability: 1
     productivity: 1
-  - name: Inn
-    economy: 1
-    loyalty: 1
-    society: 1
-    value: 500
   - name: Foundry (Handles metal from goldmine)
     lots: 2
     economy: 2
@@ -33,11 +28,6 @@ structures:
     productivity: 1
   - name: Weaponsmith
     economy: 1
-    stability: 1
-  - name: Herbalist
-    # Magic item slot: 1 minor potion or wondrous item
-    # Minor: Oil of Misdirection
-    loyalty: 1
     stability: 1
   - name: Cathedral of Irori (Knowledge)
     # Magic item slots: 3 minor potions or wondrous, 2 medium potions or wondrous
@@ -80,7 +70,7 @@ structures:
     # Minor: Scroll of Shocking Grasp
     # Minor: Scroll of Bless
     # Minor: Scroll of Chill Touch
-    # Minor: 
+    # Minor: Scroll of Ray of Exhaustion (375gp)
     # Helm of Comprehend languages & Read magic
     # Scroll of Magic Missile (CL 1), Scroll of Sanctuary (CL 1)
     lots: 4
@@ -142,10 +132,11 @@ structures:
     loyalty: 3
     stability: 1
     fame: 1
-  - name: Temporary theater (to upgrade to arena)
-    lots: 2
-    economy: 2
-    stability: 2
+  - name: Champions Cup
+    lots: 4
+    stability: 4
+    fame: 1
+    crime: 1
   - name: Temporary trade shop (to upgrade to guild hall)
     economy: 1
     stability: 1
@@ -159,7 +150,7 @@ structures:
     # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
     # Major: Greater Poisoner's Jacket 58 000gp
     # Medium: Minor Cloak of Displacement (permanent blur) 24 000gp
-    # Minor: 
+    # Minor: Far-reaching sight (4 000 gp)
     # Minor: Campfire bead 720gp
     # Minor: Daredevil Boots (1400gp)
     # Minor: Bag of Holding type 3 (7400 gp)
@@ -178,9 +169,15 @@ structures:
     lots: 4
     # Loyalty is 1/4 of the highest single creature's CR displayed within
     loyalty: 2
+# Northwestern Stagia
+  - name: Trader's rest Inn
+    economy: 1
+    loyalty: 1
+    society: 1
+    value: 500
 # Somewhere in Stagia
-  - name: House x 6
-    lots: 6
+  - name: House x 9
+    lots: 9
 events:
   - description: Capital
     economy: 1
