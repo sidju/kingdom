@@ -1,14 +1,16 @@
+# Plan has been made to connect murkriver to the swamp, poorly thought out.
+# Exploration exict has been made to explore south-west border
 name: Stagia
-unrest: 0
-treasury: 53
+unrest: 6
+treasury: 94
 infrastructure:
-  claimedHexes: 72
+  claimedHexes: 75
   farms: 43
   sawmills: 7
   quarries: 5
-  mines: 4
+  mines: 5
   roads: 39
-  rivers: 34
+  rivers: 36
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -26,6 +28,9 @@ modifiers:
     effects:
       income: -1
   - cause: Dwarven defenders army (garrisoned in Capital)
+    effects:
+      income: -1
+  - cause: Medium barbarian army (garrisoned in Hooktown)
     effects:
       income: -1
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)

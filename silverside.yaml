@@ -13,4 +13,11 @@ structures:
     # Minor: Ring of Jumping
     economy: 1
     loyalty: 1
+  # To add:
+  # - Tavern
+  # - Maybe a brewery
+  # - General Store
+  # - Artisan shop, potter
+  # - A few extra houses
+  # - Artisan shop, tailor
 events: []

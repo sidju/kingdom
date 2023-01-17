@@ -126,7 +126,7 @@ structures:
   - name: Stolen Tale's College (Bardic College)
     # Magic item slots: 2 minor scrolls or wondrous
     # Minor: Scoll of Obscure object (150gp)
-    # Minor: 
+    # Minor: Boots of the Winterlands (2500 gp)
     lots: 2
     economy: 1
     loyalty: 3
@@ -150,7 +150,7 @@ structures:
     # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
     # Major: Greater Poisoner's Jacket 58 000gp
     # Medium: Minor Cloak of Displacement (permanent blur) 24 000gp
-    # Minor: Far-reaching sight (4 000 gp)
+    # Minor: Pirate's eye-patch (2600 gp)
     # Minor: Campfire bead 720gp
     # Minor: Daredevil Boots (1400gp)
     # Minor: Bag of Holding type 3 (7400 gp)
@@ -232,3 +232,5 @@ events:
     economy: 1
   - description: Visit from Runelord slayer
     fame: 1
+  - description: Stoltz was assassinated
+
