@@ -55,8 +55,8 @@ structures:
     corruption: 1
   - name: Temple of Erastil
     # Magic item slot: 2 minor
-    # Minor: Page of Spell Knowledge (Fog cloud, 4000gp)
-    # Minor: Dowsing syrup (1000gp)
+    # Minor: 
+    # Minor: 
     loyalty: 2
     stability: 2
   - name: Watch tower
