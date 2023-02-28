@@ -1,5 +1,5 @@
 name: Stagia (capital)
-population: 12541
+population: 12791
 walls: 4
 districts: 4
 structures:
@@ -10,6 +10,8 @@ structures:
     stability: 1
     productivity: 2
   - name: Stagia Castle
+    # CL 13 6x Permanent alarm around the 4 royal suites
+    # CL 13 Teleport Trap around the 4 royal suites, to in front of guard post
     lots: 4
     economy: 2
     loyalty: 2
@@ -99,6 +101,12 @@ structures:
     stability: 1
     crime: 1
     value: 1000
+  - name: Stagia Town Hall
+    # Discount unused: Barracks, cistern, jail, watchtower, dump
+    economy: 1
+    loyalty: 1
+    stability: 1
+    law: 1
 # Western Stagia
   - name: Parks x7
     loyalty: 7
@@ -223,7 +231,7 @@ events:
     fame: 1
   - description: Land rush (consequences resolved)
   - description: Eliminate drug ring
-  - description: Lamashtu cleric Erika has relations with Munguk
+  - description: Lamashtu cleric Johanna has relations with Munguk
   - description: Boom-town
     corruption: 4
   - description: Old man Ned creates extradimensional space in the university

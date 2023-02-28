@@ -49,8 +49,9 @@
     economy: 2
 - name: Kundal
   role: Royal Enforcer
+  # Uses +2 STR belt
   bonus: # based on Dexterity or Strength
-    loyalty: 4
+    loyalty: 5
 - name: Akiros
   role: Warden
   bonus: # based on Constitution or Strength

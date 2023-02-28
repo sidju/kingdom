@@ -1,8 +1,12 @@
 # Plan has been made to connect murkriver to the swamp, poorly thought out.
-# Exploration exict has been made to explore south-west border
+# Exploration edict has been made to explore south-west border.
+
+# There was a drowned cave with ore we failed to recognize north west of Hooktown,
+# we have made a deal with Garess to have it drained and surveyed in exchange for
+# -1 economy on the mine and 1000gp up front.
 name: Stagia
-unrest: 6
-treasury: 94
+unrest: 1
+treasury: 70
 infrastructure:
   claimedHexes: 75
   farms: 43
@@ -27,10 +31,10 @@ modifiers:
   - cause: Large human army (garrisoned in Hooktown)
     effects:
       income: -1
-  - cause: Dwarven defenders army (garrisoned in Capital)
+  - cause: Medium dwarven defenders army (garrisoned in Capital)
     effects:
       income: -1
-  - cause: Medium barbarian army (garrisoned in Hooktown)
+  - cause: Medium human barbarian army (garrisoned in Hooktown)
     effects:
       income: -1
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)

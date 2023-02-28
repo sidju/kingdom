@@ -1,10 +1,28 @@
 name: Nettleville
-population: 25
+population: 1225
 districts: 1
 structures:
+  - name: Houses x2
+    lots: 2
   - name: Nettleville animal market
     economy: 1
     stability: -1
     productivity: 1
     # Improves adjacent farms
     consumption: -7
+  - name: Stable
+    loyalty: 1
+    economy: 1
+    value: 500
+  - name: Nettle Mill
+    economy: 1
+    stability: 1
+    productivity: 1
+  - name: Granary
+    # Holds: 0 BP
+    loyalty: 1
+    stability: 1
+  - name: Shrine of Erastil
+    # Magic item slots: 1 minor potion, scroll or wondrous
+    # Minor: 
+    loyalty: 1
