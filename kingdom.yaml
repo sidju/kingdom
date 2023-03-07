@@ -6,7 +6,7 @@
 # -1 economy on the mine and 1000gp up front.
 name: Stagia
 unrest: 1
-treasury: 58
+treasury: 54
 infrastructure:
   claimedHexes: 79
   farms: 44
