@@ -55,8 +55,8 @@ structures:
     corruption: 1
   - name: Temple of Erastil
     # Magic item slot: 2 minor
-    # Minor: 
-    # Minor: 
+    # Minor: Potion of Hide from Undead (CL 1, 50 gp)
+    # Minor: Equestrian Belt (3200 gp, CL 3)
     loyalty: 2
     stability: 2
   - name: Watch tower

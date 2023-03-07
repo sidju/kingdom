@@ -22,9 +22,11 @@ structures:
     loyalty: 1
     society: 1
     value: 500
+  - name: Silver Brewing
+    loyalty: 1
+    stability: 1
   # To add:
-  # - Tavern
-  # - Maybe a brewery
+  # - Maybe a Tavern
   # - General Store
   # - Artisan shop, potter
   # - A few extra houses
