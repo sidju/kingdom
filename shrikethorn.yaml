@@ -1,0 +1,37 @@
+name: Shrikethorn
+population: 25
+districts: 1
+structures:
+  - name: Houses x2
+    lots: 2
+  - name: Granary
+    # Holds: 0 BP
+    loyalty: 1
+    stability: 1
+  - name: Trade Shop
+    economy: 1
+    stability: 1
+    productivity: 1
+    value: 500
+  - name: Inn
+    loyalty: 1
+    economy: 1
+    society: 1
+    value: 500
+  - name: Thorn Mill
+    economy: 1
+    stability: 1
+    productivity: 1
+
+# To build:
+# - Stockyard
+# - Stable
+# - Shrine
+# - Graveyard
+# - Mansion
+# - Barracks
+# - Monument
+
+events:
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1

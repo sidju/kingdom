@@ -78,3 +78,5 @@ events:
   - description: Drug den busted
   - description: Desperate refugees
     loyalty: 1
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1

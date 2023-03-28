@@ -24,4 +24,6 @@ structures:
   - name: Barracks
     defense: 2
     law: 1
-events: []
+events:
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1

@@ -55,3 +55,5 @@ structures:
 events:
   - description: Annexed for Stagia
     fame: 1
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1

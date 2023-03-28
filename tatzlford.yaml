@@ -63,3 +63,5 @@ events:
   - description: Good trade
     # Temporary bonus to economy, now gone
     corruption: 3
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1

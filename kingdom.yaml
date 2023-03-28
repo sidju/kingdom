@@ -5,13 +5,13 @@
 # we have made a deal with Garess to have it drained and surveyed in exchange for
 # -1 economy on the mine and 1000gp up front.
 name: Stagia
-unrest: 1
-treasury: 54
+unrest: 0
+treasury: 58
 infrastructure:
-  claimedHexes: 79
-  farms: 44
+  claimedHexes: 81
+  farms: 45
   sawmills: 7
-  quarries: 6
+  quarries: 7
   mines: 6
   roads: 39
   rivers: 38
@@ -67,6 +67,10 @@ modifiers:
     effects:
       economy: 1
   - cause: Feud on animal cruelty
+  - cause: Political calm (Also +1 law for every existing settlement)
+    effects:
+      loyalty: 1
+      stability: 1
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml
@@ -75,3 +79,4 @@ settlementPaths:
   - silverside.yaml
   - hooktown.yaml
   - nettleville.yaml
+  - shrikethorn.yaml

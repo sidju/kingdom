@@ -241,4 +241,5 @@ events:
   - description: Visit from Runelord slayer
     fame: 1
   - description: Stoltz was assassinated
-
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1

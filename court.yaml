@@ -6,6 +6,11 @@
   bonus: # based on Charisma
     loyalty: 6
     stability: 6
+- name: Imecus Strohn
+  role: Consort
+  # Uses +4 CHA headband
+  bonus: # based on Charisma
+    loyalty: 1
 - name: Stoltz
   titles:
   - Bog friend

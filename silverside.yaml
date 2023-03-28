@@ -15,7 +15,7 @@ structures:
     loyalty: 1
   - name: Shrine of Shelyn
     # Magic item slots: 1 minor potion, scroll or wondrous
-    # Minor: 
+    # Minor: Oil of Bless Weapon (50 gp CL 1)
     loyalty: 1
   - name: Silver mirror Inn
     economy: 1
@@ -31,4 +31,6 @@ structures:
   # - Artisan shop, potter
   # - A few extra houses
   # - Artisan shop, tailor
-events: []
+events:
+  - description: Political calm (kingdom wide effect on existing settlements)
+    law: 1
