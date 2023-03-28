@@ -62,6 +62,8 @@ structures:
   - name: Watch tower
     stability: 1
     defense: 2
+  # To build:
+  # - Foundry, gets bonus from mine
   - name: Houses x3
     lots: 3
   - name: Tenements x3

@@ -82,11 +82,6 @@ structures:
     # +4 lore regarding Knowledge arcana
     lore: 4
     society: 3
-  - name: Ropemakers (Trade Shop)
-    economy: 1
-    stability: 1
-    productivity: 1
-    value: 500
   - name: Caster's tower (Ulrika Dunehill)
     # Magic item slots: 3 Minor, 2 Medium
     # Medium: Best of Equilibrium
@@ -107,6 +102,18 @@ structures:
     loyalty: 1
     stability: 1
     law: 1
+  - name: Stagia Military Academy
+    # Unused discounts: Barracks
+    # Give one bonus tactic to commanders recruited in Stagia
+    # Magic item slots: 1 minor and 1 medium armor, shield or weapon
+    # Medium: 
+    # Minor: 
+    lots: 2
+    loyalty: 2
+    stability: 1
+    fame: 1
+    law: 1
+    lore: 1
 # Western Stagia
   - name: Parks x7
     loyalty: 7
@@ -154,6 +161,11 @@ structures:
     economy: 1
     productivity: 1
     value: 500
+  - name: Ropemakers (Trade Shop)
+    economy: 1
+    stability: 1
+    productivity: 1
+    value: 500
   - name: Ye Olde Magic Shop
     # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
     # Major: Greater Poisoner's Jacket 58 000gp
@@ -184,8 +196,8 @@ structures:
     society: 1
     value: 500
 # Somewhere in Stagia
-  - name: House x 9
-    lots: 9
+  - name: House x 10
+    lots: 10
 events:
   - description: Capital
     economy: 1

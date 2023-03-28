@@ -2,15 +2,18 @@
 - name: Meredith Wander
   titles:
   - Bog friend
+  - Duchess
   role: Ruler
   bonus: # based on Charisma
     loyalty: 6
     stability: 6
 - name: Imecus Strohn
+  titles:
+  - Lord
   role: Consort
   # Uses +4 CHA headband
-  bonus: # based on Charisma
-    loyalty: 1
+  bonus: # based on Charisma / 2
+    loyalty: 0
 - name: Stoltz
   titles:
   - Bog friend

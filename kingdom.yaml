@@ -1,18 +1,15 @@
 # Plan has been made to connect murkriver to the swamp, poorly thought out.
 # Exploration edict has been made to explore south-west border.
 
-# There was a drowned cave with ore we failed to recognize north west of Hooktown,
-# we have made a deal with Garess to have it drained and surveyed in exchange for
-# -1 economy on the mine and 1000gp up front.
 name: Stagia
-unrest: 0
-treasury: 58
+unrest: 2
+treasury: 66
 infrastructure:
-  claimedHexes: 81
+  claimedHexes: 82
   farms: 45
   sawmills: 7
   quarries: 7
-  mines: 6
+  mines: 7
   roads: 39
   rivers: 38
 modifiers:
@@ -71,6 +68,16 @@ modifiers:
     effects:
       loyalty: 1
       stability: 1
+  # There was a drowned cave with ore we failed to recognize north west of Hooktown,
+  # we have made a deal with Garess to have it drained and surveyed in exchange for
+  # -1 economy on the mine and 1000gp up front.
+  - cause: Deal with Garess
+    effects:
+      economy: -1
+  - cause: Silver vein under Garess mine
+    effects:
+      income: 1
+      economy: 2
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml
