@@ -19,7 +19,7 @@ structures:
     stability: 1
     productivity: 1
   - name: Granary
-    # Holds: 1 BP
+    # Holds: 5 BP
     loyalty: 1
     stability: 1
   - name: Shrine of Erastil

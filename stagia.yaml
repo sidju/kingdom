@@ -103,17 +103,22 @@ structures:
     stability: 1
     law: 1
   - name: Stagia Military Academy
+    # Magic item slots: 1 minor and 1 medium armor, shield or weapon
+    # Medium: Dwarfbond hammer (25 312 gp)
+    # Minor: Mistmail (2 250 gp)
     # Unused discounts: Barracks
     # Give one bonus tactic to commanders recruited in Stagia
-    # Magic item slots: 1 minor and 1 medium armor, shield or weapon
-    # Medium: 
-    # Minor: 
     lots: 2
     loyalty: 2
     stability: 1
     fame: 1
     law: 1
     lore: 1
+  - name: Stagia Penitentiary (Jail)
+    loyalty: 2
+    stability: 2
+    crime: -1
+    law: 1
 # Western Stagia
   - name: Parks x7
     loyalty: 7
@@ -138,6 +143,17 @@ structures:
   - name: Restov's Embassy
     lots: 2
 # North Stagia
+  - name: Stagia Waterfront
+    # Magic item slots: 2 minor wondrous, 1 medium wondrous, 1 major wondrous
+    # Major: 
+    # Medium: 
+    # Minor: 
+    # Minor: 
+    # Discount: Market
+    # Halves loyalty penalty for taxation edict
+    economy: 4
+    value: 4000
+    productivity: 2
   - name: Stolen Tale's College (Bardic College)
     # Magic item slots: 2 minor scrolls or wondrous
     # Minor: Scoll of Obscure object (150gp)
@@ -147,6 +163,10 @@ structures:
     loyalty: 3
     stability: 1
     fame: 1
+  - name: Stolen Tale's Theater
+    # Unused discount: Inn
+    economy: 2
+    stability: 2
   - name: Champions Cup
     lots: 4
     stability: 4
@@ -255,3 +275,13 @@ events:
   - description: Stoltz was assassinated
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+
+# To build:
+# - Sewers
+# - City walls facing water in core district
+# - Waterfront
+# - Garrison
+# - Inn
+# - Jail
+# - Theater
+# - Hospital

@@ -2,11 +2,11 @@
 # Exploration edict has been made to explore south-west border.
 
 name: Stagia
-unrest: 2
-treasury: 66
+unrest: 3
+treasury: 65
 infrastructure:
-  claimedHexes: 82
-  farms: 45
+  claimedHexes: 83
+  farms: 46
   sawmills: 7
   quarries: 7
   mines: 7
@@ -17,10 +17,10 @@ modifiers:
     effects:
       stability: 3
       consumption: 2
-  - cause: Light taxation
+  - cause: Normal taxation (affected by Waterfront in Stagia)
     effects:
-      economy: 1
-      loyalty: -1
+      economy: 2
+      loyalty: -2
   - cause: 12 Holidays
     effects:
       loyalty: 3
@@ -34,6 +34,10 @@ modifiers:
   - cause: Medium human barbarian army (garrisoned in Hooktown)
     effects:
       income: -1
+  - cause: Navy in Waterfront in Stagia 
+  # built by 1st to 5th lamashan
+    effects:
+      income: 0
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
       fame: 5
