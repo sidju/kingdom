@@ -9,6 +9,15 @@ structures:
     economy: 2
     stability: 1
     productivity: 2
+  - name: Sewer system
+    lots: 0
+    loyalty: 1
+    stability: 2
+    crime: 1
+    productivity: 1
+  - name: Cistern
+    # Outside Cathedral of Irori
+    stability: 1
   - name: Stagia Castle
     # CL 13 6x Permanent alarm around the 4 royal suites
     # CL 13 Teleport Trap around the 4 royal suites, to in front of guard post
@@ -114,6 +123,11 @@ structures:
     fame: 1
     law: 1
     lore: 1
+  - name: Stagia Captain's Inn
+    economy: 1
+    loyalty: 1
+    value: 500
+    society: 1
   - name: Stagia Penitentiary (Jail)
     loyalty: 2
     stability: 2
@@ -145,15 +159,23 @@ structures:
 # North Stagia
   - name: Stagia Waterfront
     # Magic item slots: 2 minor wondrous, 1 medium wondrous, 1 major wondrous
-    # Major: 
+    # Major: Greater Sniper Goggles (50 000 gp)
     # Medium: 
-    # Minor: 
+    # Minor: Page of Spell knowledge, Bull's Strength (4 000 gp)
     # Minor: 
     # Discount: Market
     # Halves loyalty penalty for taxation edict
     economy: 4
     value: 4000
     productivity: 2
+  - name: Stagia market
+    # Magic item slots: 2 minor wondrous
+    # Minor: 
+    # Minor: 
+    economy: 2
+    stability: 2
+    value: 2000
+
   - name: Stolen Tale's College (Bardic College)
     # Magic item slots: 2 minor scrolls or wondrous
     # Minor: Scoll of Obscure object (150gp)
@@ -177,10 +199,6 @@ structures:
     stability: 1
     value: 500
     productivity: 1
-  - name: Shop
-    economy: 1
-    productivity: 1
-    value: 500
   - name: Ropemakers (Trade Shop)
     economy: 1
     stability: 1
@@ -216,8 +234,8 @@ structures:
     society: 1
     value: 500
 # Somewhere in Stagia
-  - name: House x 10
-    lots: 10
+  - name: House x 11
+    lots: 11
 events:
   - description: Capital
     economy: 1
