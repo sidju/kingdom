@@ -2,17 +2,17 @@
 # Exploration edict has been made to explore south-west border.
 
 name: Stagia
-unrest: 3
+unrest: 2
 treasury: 69
 infrastructure:
-  claimedHexes: 84
+  claimedHexes: 88
   farms: 47
   fisheries: 1
   sawmills: 7
   quarries: 7
   mines: 7
-  roads: 39
-  rivers: 39
+  roads: 41
+  rivers: 43
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -92,3 +92,4 @@ settlementPaths:
   - hooktown.yaml
   - nettleville.yaml
   - shrikethorn.yaml
+  - crookfall.yaml

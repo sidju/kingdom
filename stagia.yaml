@@ -37,6 +37,11 @@ structures:
     stability: 1
     income: 1
     productivity: 1
+  - name: Royal Mint
+    economy: 3
+    loyalty: 3
+    stability: 1
+    fame: 1
   - name: Weaponsmith
     economy: 1
     stability: 1
@@ -134,8 +139,8 @@ structures:
     crime: -1
     law: 1
 # Western Stagia
-  - name: Parks x7
-    loyalty: 7
+  - name: Parks x9
+    loyalty: 9
   - name: Shrine of Erastil
     # Magic item slot: 1 minor potion scroll or wondrous
     # Minor: Braces of Armor +1
@@ -170,12 +175,11 @@ structures:
     productivity: 2
   - name: Stagia market
     # Magic item slots: 2 minor wondrous
-    # Minor: 
+    # Minor: Braces of armor +1 (1000gp)
     # Minor: 
     economy: 2
     stability: 2
     value: 2000
-
   - name: Stolen Tale's College (Bardic College)
     # Magic item slots: 2 minor scrolls or wondrous
     # Minor: Scoll of Obscure object (150gp)

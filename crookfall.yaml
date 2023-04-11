@@ -1,0 +1,22 @@
+name: Crookfall
+population: 25
+districts: 1
+structures:
+  - name: Houses x0
+    lots: 0
+  - name: Monument
+    loyalty: 1
+
+# To build:
+# - Pier x2 (one above and one below the falls)
+# - Stockyard
+# - Stable
+# - Shrine
+# - Graveyard
+# - Mansion
+# - Barracks
+# - Monument
+# - Inn
+# - Granary
+# - Mill
+# - Trade Shop

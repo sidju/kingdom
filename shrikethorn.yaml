@@ -5,7 +5,7 @@ structures:
   - name: Houses x2
     lots: 2
   - name: Granary
-    # Holds: 4 BP
+    # Holds: 5 BP
     loyalty: 1
     stability: 1
   - name: Trade Shop
@@ -29,12 +29,16 @@ structures:
     productivity: 1
     # Improves adjacent farms
     consumption: -5
+  - name: Graveyard
+    loyalty: 1
+  - name: Shrine of Erastil
+    # Magic item slots: 1 minor potion, scroll or wondrous
+    # Minor: 
+    loyalty: 1
 
 # To build:
 # - Stockyard
 # - Stable
-# - Shrine
-# - Graveyard
 # - Mansion
 # - Barracks
 # - Monument

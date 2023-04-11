@@ -38,10 +38,10 @@
   # Uses +2 CHA headband
   bonus: # based on Wisdom or Charisma
     loyalty: 3
-- name: Lander
+- name: Quintessa
   role: Grand Diplomat
   bonus: # based on Charisma or Intelligence
-    stability: 3
+    stability: 4
 - name: Jhod
   role: High Priest
   bonus: # based on Charisma or Wisdom
