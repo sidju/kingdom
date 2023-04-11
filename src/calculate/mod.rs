@@ -14,8 +14,8 @@ pub fn summarise(k: &Kingdom) -> Summary {
   Summary{
     kingdom: KingdomSummary {
       name: k.name.clone(),
-      size: get_size(k),
-      control_dc: get_size(k) + 20,
+      size: k.infrastructure.claimed_hexes,
+      control_dc: get_control_dc(k),
       economy: get_economy(k),
       loyalty: get_loyalty(k),
       stability: get_stability(k),

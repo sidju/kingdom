@@ -1,11 +1,11 @@
 use super::*;
 
-pub fn get_size(data: &Kingdom) -> i64 {
-  let mut size = data.infrastructure.claimed_hexes;
+pub fn get_control_dc(data: &Kingdom) -> i64 {
+  let mut dc = data.infrastructure.claimed_hexes;
   for s in &data.settlements {
-    size += s.districts;
+    dc += s.districts;
   }
-  size
+  dc + 20
 }
 
 pub fn get_economy(k: &Kingdom) -> i64 {

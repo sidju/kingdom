@@ -1,7 +1,7 @@
 use super::*;
 
 #[test]
-fn size() {
+fn control_dc() {
   let mut k = Kingdom::default();
   k.infrastructure.claimed_hexes = 4;
   let mut s = Settlement::default();
@@ -11,9 +11,9 @@ fn size() {
   s.districts = 2;
   k.settlements.push(s);
   assert_eq!(
-    get_size(&k),
-    7,
-    "The size of a kingdom is claimed hexes + total nr of settlement districts."
+    get_control_dc(&k),
+    27,
+    "The control DC of a kingdom is 20 + claimed hexes + total nr of settlement districts."
   );
 }
 
