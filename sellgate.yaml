@@ -1,0 +1,11 @@
+name: Sellgate
+population: 25
+districts: 1
+structures:
+  - name: Houses x1
+    lots: 1
+  - name: Pier
+    economy: 1
+    stability: 1
+    value: 1000
+    crime: 1

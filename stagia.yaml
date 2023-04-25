@@ -31,6 +31,10 @@ structures:
     economy: 1
     stability: 1
     productivity: 1
+  - name: Granary
+    # Holds: 0 BP
+    loyalty: 1
+    stability: 1
   - name: Foundry (Handles metal from goldmine)
     lots: 2
     economy: 2
@@ -167,7 +171,7 @@ structures:
   - name: Stagia Waterfront
     # Magic item slots: 2 minor wondrous, 1 medium wondrous, 1 major wondrous
     # Major: Greater Sniper Goggles (50 000 gp)
-    # Medium: 
+    # Medium: Drinking horn of bottomless valor (24 000 gp)
     # Minor: Page of Spell knowledge, Bull's Strength (4 000 gp)
     # Minor: Bottle of Shadows (7000 gp)
     # Discount: Market
@@ -178,12 +182,16 @@ structures:
   - name: Stagia market
     # Magic item slots: 2 minor wondrous
     # Minor: Braces of armor +1 (1000gp)
-    # Minor: 
+    # Minor: Scroll of Shield (25 gp)
     economy: 2
     stability: 2
     value: 2000
   - name: Black Market
     # Magic item slots: 2 minor, 1 medium, 1 major
+    # Major: 
+    # Medium: Boundary chalk (10 000 gp)
+    # Minor: 
+    # Minor: Scroll of Magic Weapon (25 gp)
     # Unused discount: Brothel
     economy: 2
     stability: 1
@@ -313,6 +321,8 @@ events:
   - description: Stoltz was assassinated
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+  - description: Sponsored the Lamashtu cult to start a nation
+    infamy: 1
 
 # To build:
 # - Sewers

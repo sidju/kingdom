@@ -19,7 +19,7 @@
   - Bog friend
   role: General
   bonus: # based on Strength or Charisma
-    stability: 6
+    stability: 7
 - name: Devon
   titles:
   - Bog friend

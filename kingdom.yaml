@@ -3,16 +3,16 @@
 
 name: Stagia
 unrest: 2
-treasury: 69
+treasury: 73
 infrastructure:
-  claimedHexes: 91
-  farms: 49
+  claimedHexes: 94
+  farms: 50
   fisheries: 1
   sawmills: 7
   quarries: 7
   mines: 7
   roads: 41
-  rivers: 46
+  rivers: 49
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -35,10 +35,9 @@ modifiers:
   - cause: Medium human barbarian army (garrisoned in Hooktown)
     effects:
       income: -1
-  - cause: Navy in Waterfront in Stagia 
-  # built by 1st to 5th lamashan
+  - cause: River Navy (Medium human riverfolk) in Waterfront in Stagia
     effects:
-      income: 0
+      income: -4
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
       fame: 5
@@ -83,6 +82,12 @@ modifiers:
     effects:
       income: 1
       economy: 2
+  - cause: Royal enforcer caused public uproar
+    effects:
+      loyalty: -1
+  - cause: Lizardfolk village pays tribute
+    effects:
+      economy: 1
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml
@@ -93,3 +98,4 @@ settlementPaths:
   - nettleville.yaml
   - shrikethorn.yaml
   - crookfall.yaml
+  - sellgate.yaml
