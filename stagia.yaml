@@ -58,9 +58,11 @@ structures:
     fame: 1
     law: 2
     lore: 1
-  - name: Barracks
-    law: 1
-    defense: 2
+  - name: Garrison
+    # Discount: Granary
+    lots: 2
+    loyalty: 2
+    stability: 2
   - name: Dragn's Workshop (Armorsmith)
     # Magic item slot: 1 magic armor
     # Armor: Adhesive Chainmail á 8150 gp
@@ -167,7 +169,7 @@ structures:
     # Major: Greater Sniper Goggles (50 000 gp)
     # Medium: 
     # Minor: Page of Spell knowledge, Bull's Strength (4 000 gp)
-    # Minor: 
+    # Minor: Bottle of Shadows (7000 gp)
     # Discount: Market
     # Halves loyalty penalty for taxation edict
     economy: 4
@@ -180,6 +182,14 @@ structures:
     economy: 2
     stability: 2
     value: 2000
+  - name: Black Market
+    # Magic item slots: 2 minor, 1 medium, 1 major
+    # Unused discount: Brothel
+    economy: 2
+    stability: 1
+    value: 2000
+    corruption: 2
+    crime: 2
   - name: Stolen Tale's College (Bardic College)
     # Magic item slots: 2 minor scrolls or wondrous
     # Minor: Scoll of Obscure object (150gp)
@@ -231,6 +241,12 @@ structures:
     lots: 4
     # Loyalty is 1/4 of the highest single creature's CR displayed within
     loyalty: 2
+  - name: Bureau
+    economy: 1
+    loyalty: -1
+    stability: 1
+    corruption: 1
+    law: 1
 # Northwestern Stagia
   - name: Trader's rest Inn
     economy: 1
@@ -238,8 +254,8 @@ structures:
     society: 1
     value: 500
 # Somewhere in Stagia
-  - name: House x 11
-    lots: 11
+  - name: House x 12
+    lots: 12
 events:
   - description: Capital
     economy: 1

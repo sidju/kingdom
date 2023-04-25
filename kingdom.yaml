@@ -5,14 +5,14 @@ name: Stagia
 unrest: 2
 treasury: 69
 infrastructure:
-  claimedHexes: 88
-  farms: 47
+  claimedHexes: 91
+  farms: 49
   fisheries: 1
   sawmills: 7
   quarries: 7
   mines: 7
   roads: 41
-  rivers: 43
+  rivers: 46
 modifiers:
   - cause: Aggressive promotion edict
     effects:

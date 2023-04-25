@@ -33,7 +33,7 @@ structures:
     loyalty: 1
   - name: Shrine of Erastil
     # Magic item slots: 1 minor potion, scroll or wondrous
-    # Minor: 
+    # Minor: Scroll of Spiritual weapon (150 gp)
     loyalty: 1
 
 # To build:
