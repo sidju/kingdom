@@ -1,18 +1,18 @@
-# Plan has been made to connect murkriver to the swamp, poorly thought out.
+# Plan has been made to connect murkriver to the swamp, poorly thought out. 16 BP?
 # Exploration edict has been made to explore south-west border.
 
 name: Stagia
 unrest: 2
-treasury: 73
+treasury: 80
 infrastructure:
-  claimedHexes: 94
-  farms: 50
+  claimedHexes: 97
+  farms: 51
   fisheries: 1
   sawmills: 7
   quarries: 7
   mines: 7
-  roads: 41
-  rivers: 49
+  roads: 43
+  rivers: 50
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -88,6 +88,14 @@ modifiers:
   - cause: Lizardfolk village pays tribute
     effects:
       economy: 1
+  - cause: Midwinter celebrations
+    effects:
+      loyalty: 1
+  # The ruined keep (elven keep)
+  # Considered as 5 BP of material for watchtower, castle or fort
+  # - cause: Sent exploration party to unexplored parts of swamp
+  # Cost: 2 BP
+
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml

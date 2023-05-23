@@ -2,8 +2,8 @@ name: Crookfall
 population: 25
 districts: 1
 structures:
-  - name: Houses x0
-    lots: 0
+  - name: Houses x1
+    lots: 1
   - name: Monument
     loyalty: 1
 

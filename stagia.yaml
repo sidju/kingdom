@@ -35,6 +35,11 @@ structures:
     # Holds: 0 BP
     loyalty: 1
     stability: 1
+  - name: Hospital
+    loyalty: 1
+    stability: 2
+    lore: 1
+    productivity: 2
   - name: Foundry (Handles metal from goldmine)
     lots: 2
     economy: 2
@@ -145,8 +150,8 @@ structures:
     crime: -1
     law: 1
 # Western Stagia
-  - name: Parks x9
-    loyalty: 9
+  - name: Parks x11
+    loyalty: 11
   - name: Shrine of Erastil
     # Magic item slot: 1 minor potion scroll or wondrous
     # Minor: Braces of Armor +1
@@ -188,7 +193,7 @@ structures:
     value: 2000
   - name: Black Market
     # Magic item slots: 2 minor, 1 medium, 1 major
-    # Major: 
+    # Major: +5 Holy Spear
     # Medium: Boundary chalk (10 000 gp)
     # Minor: 
     # Minor: Scroll of Magic Weapon (25 gp)
@@ -325,11 +330,4 @@ events:
     infamy: 1
 
 # To build:
-# - Sewers
 # - City walls facing water in core district
-# - Waterfront
-# - Garrison
-# - Inn
-# - Jail
-# - Theater
-# - Hospital

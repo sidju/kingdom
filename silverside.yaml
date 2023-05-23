@@ -8,7 +8,7 @@ structures:
   - name: Mim's Jewelry (Exotic artisan, Mim Wobbelgander)
     # Magic item slots: 1 minor ring or wondrous, 1 medium ring or
     # Magic item slots: wondrous, 1 major ring
-    # Major: Greater ring of Energy Resistance (44000gp) (30 resist electricity)
+    # Major: 
     # Medium: Ring of Blinking (27000gp)
     # Minor: Ring of Jumping
     economy: 1
