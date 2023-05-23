@@ -172,6 +172,10 @@ structures:
     fame: 1
   - name: Restov's Embassy
     lots: 2
+  - name: Taldan trader's mansion
+    stability: 1
+    law: 1
+    society: 1
 # North Stagia
   - name: Stagia Waterfront
     # Magic item slots: 2 minor wondrous, 1 medium wondrous, 1 major wondrous
@@ -233,7 +237,7 @@ structures:
     value: 500
   - name: Ye Olde Magic Shop
     # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
-    # Major: Greater Poisoner's Jacket 58 000gp
+    # Major: 
     # Medium: Minor Cloak of Displacement (permanent blur) 24 000gp
     # Minor: Pirate's eye-patch (2600 gp)
     # Minor: Phylactery of Positive Channeling (11 000 gp)
@@ -260,15 +264,22 @@ structures:
     stability: 1
     corruption: 1
     law: 1
+  - name: Stagia town bank
+    economy: 4
+    value: 2000
 # Northwestern Stagia
   - name: Trader's rest Inn
     economy: 1
     loyalty: 1
     society: 1
     value: 500
+  - name: Stagia People's library
+    loyalty: 1
+    economy: 1
+    lore: 1
 # Somewhere in Stagia
-  - name: House x 12
-    lots: 12
+  - name: House x 13
+    lots: 13
 events:
   - description: Capital
     economy: 1

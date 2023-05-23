@@ -5,8 +5,9 @@
   - Duchess
   role: Ruler
   bonus: # based on Charisma
-    loyalty: 6
-    stability: 6
+    loyalty: 7
+    stability: 7
+    economy: 7
 - name: Imecus Strohn
   titles:
   - Lord

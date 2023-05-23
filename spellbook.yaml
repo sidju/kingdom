@@ -1,0 +1,108 @@
+cantrips:
+- "All"
+
+level_1:
+  normal_paid_for: 35
+  druidy_paid_for: 3
+  normal:
+    - snowball
+    - burning hands
+    - magic missile
+    - vanish
+    - comprehend languages
+    - secluded grimoire
+    - keep watch
+    - alarm
+    - shield
+    - feather fall
+    - protection from evil
+    - protection from chaos
+    - protection from good
+    - protection from law
+    - burning disarm
+    - expiditious retreat
+    - endure elements
+    - identify
+    - mage armour
+    - silent image
+    - unseen servant
+    - knock
+    - charm person
+    - grease
+    - mount
+    - reduce person
+    - shocking grasp
+    - chill touch
+    - ray of enfeeblement
+  druidy:
+    - cure light wounds
+    - deadeye's lore
+    - calm animals
+
+level_2:
+  normal_paid_for: 23
+  druidy_paid_for: 2
+  normal:
+    - mirror image
+    - greater detect magic
+    - bear's endurance
+    - resist energy
+    - levitate
+    - web
+    - invisibility
+    - bull's strength
+    - spider climb
+    - scorching ray
+    - darkvision
+    - detect thoughts
+    - blindness / deafness
+    - false life
+    - ghoul touch
+    - locate object
+  druidy:
+    - lesser restoration
+    - barkskin
+
+level_3:
+  normal_paid_for: 23
+  druidy_paid_for: 2
+  normal:
+    - haste
+    - fireball
+    - dispell magic
+    - communal resist energy
+    - lightning bolt
+    - daylight
+    - hold person
+    - displacement
+    - suggestion
+    - tongues
+    - vampiric touch
+    - fly
+  druidy:
+    - plant growth
+    - sleet storm (to be replaced by quench)
+
+level_4:
+  normal_paid_for: 23
+  druidy_paid_for: 2
+  normal:
+    - wall of fire
+    - illusory wall
+    - dimension door
+    - communal protection from energy
+    - scrying
+    - fire shield
+    - animate dead
+    - bestow curse
+    - phantasmal killer
+    - enervation
+    - wall of ice
+    - locate creature
+  druidy:
+    - reincarnate
+    - freedom of movement
+
+level_5:
+
+level_6:

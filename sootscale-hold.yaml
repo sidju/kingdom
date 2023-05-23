@@ -24,6 +24,8 @@ structures:
   - name: Barracks
     defense: 2
     law: 1
+  - name: Graveyard
+    loyalty: 1
 events:
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1

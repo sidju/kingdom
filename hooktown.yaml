@@ -68,6 +68,8 @@ structures:
     lots: 3
   - name: Tenements x3
     lots: 3
+  - name: Graveyard
+    loyalty: 1
 events:
   - description: Strategic location
     economy: 1

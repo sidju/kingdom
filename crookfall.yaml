@@ -6,6 +6,13 @@ structures:
     lots: 1
   - name: Monument
     loyalty: 1
+  - name: Graveyard
+    loyalty: 1
+  - name: The Crooked Inn
+    economy: 1
+    loyalty: 1
+    value: 500
+    society: 1
 
 # To build:
 # - Pier x2 (one above and one below the falls)

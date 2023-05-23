@@ -25,6 +25,8 @@ structures:
   - name: Silver Brewing
     loyalty: 1
     stability: 1
+  - name: Graveyard
+    loyalty: 1
   # To add:
   # - Maybe a Tavern
   # - General Store

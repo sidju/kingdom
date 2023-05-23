@@ -9,3 +9,5 @@ structures:
     stability: 1
     value: 1000
     crime: 1
+  - name: Graveyard
+    loyalty: 1
