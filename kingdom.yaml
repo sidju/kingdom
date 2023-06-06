@@ -1,17 +1,17 @@
 # Plan has been made to connect murkriver to the swamp, poorly thought out. 16 BP?
 
 name: Stagia
-unrest: 1
-treasury: 89
+unrest: 4
+treasury: 101
 infrastructure:
-  claimedHexes: 101
+  claimedHexes: 105
   farms: 53
   fisheries: 1
   sawmills: 7
-  quarries: 7
+  quarries: 8
   mines: 7
   roads: 43
-  rivers: 54
+  rivers: 58
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -98,7 +98,10 @@ modifiers:
   # Report 2: A large pile of trees, unstable with dangerous streams under.
   - cause: Visitor, rich trader from Taldor builds a mansion in west stagia
   - cause: Celebrate crowning! 50 BP spent
-      
+  - cause: Built a canal into the swamp, through to Hooktown
+    effects:
+      economy: 1
+
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml

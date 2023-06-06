@@ -65,3 +65,6 @@ events:
     corruption: 3
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+  - description: Discovery of Taldan noble remnants (possibly vampire)
+    fame: 1
+    lore: 4

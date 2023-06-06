@@ -199,7 +199,7 @@ structures:
     # Magic item slots: 2 minor, 1 medium, 1 major
     # Major: +5 Holy Spear
     # Medium: Boundary chalk (10 000 gp)
-    # Minor: 
+    # Minor: Scroll of Resist energy (divine) (150 gp)
     # Minor: Scroll of Magic Weapon (25 gp)
     # Unused discount: Brothel
     economy: 2
@@ -220,6 +220,17 @@ structures:
     # Unused discount: Inn
     economy: 2
     stability: 2
+  - name: Museum of Barbarian history
+    # +2 Lore related to History
+    # Holds:
+    # - Ovinrbaane
+    # - MW. Breastplate w. +3 armor spikes (latest Armagg's armor)
+    # - Battleaxe Keen +2 
+    economy: 1
+    loyalty: 1
+    fame: 6 # additional +5 for Ovinrbaane ("Enemy of all enemies", relic intelligent sword)
+    lore: 2
+    society: 1
   - name: Champions Cup
     lots: 4
     stability: 4
@@ -237,7 +248,7 @@ structures:
     value: 500
   - name: Ye Olde Magic Shop
     # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
-    # Major: 
+    # Major: Mantle of Immortality (50 000 gp)
     # Medium: Minor Cloak of Displacement (permanent blur) 24 000gp
     # Minor: Pirate's eye-patch (2600 gp)
     # Minor: Phylactery of Positive Channeling (11 000 gp)
