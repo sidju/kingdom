@@ -84,3 +84,6 @@ events:
     loyalty: 1
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+  - description: Plague (-6) (Full failure) Ongoing (+2 for next month (both checks))
+    stability: -4
+    # -5 treasury, +3 unrest

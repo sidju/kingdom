@@ -5,7 +5,7 @@ structures:
   - name: Houses x2
     lots: 2
   - name: Granary
-    # Holds: 5 BP
+    # Holds: 0 BP
     loyalty: 1
     stability: 1
   - name: Trade Shop

@@ -74,7 +74,7 @@ structures:
     stability: 2
   - name: Dragn's Workshop (Armorsmith)
     # Magic item slot: 1 magic armor
-    # Armor: Adhesive Chainmail á 8150 gp
+    # Armor: 
     economy: 2
     stability: 1
   - name: Bocken's Shop (Alchemist)
@@ -150,8 +150,8 @@ structures:
     crime: -1
     law: 1
 # Western Stagia
-  - name: Parks x11
-    loyalty: 11
+  - name: Parks x14
+    loyalty: 14
   - name: Shrine of Erastil
     # Magic item slot: 1 minor potion scroll or wondrous
     # Minor: Braces of Armor +1
@@ -179,7 +179,7 @@ structures:
 # North Stagia
   - name: Stagia Waterfront
     # Magic item slots: 2 minor wondrous, 1 medium wondrous, 1 major wondrous
-    # Major: Greater Sniper Goggles (50 000 gp)
+    # Major: 
     # Medium: Drinking horn of bottomless valor (24 000 gp)
     # Minor: Page of Spell knowledge, Bull's Strength (4 000 gp)
     # Minor: Bottle of Shadows (7000 gp)
@@ -241,7 +241,19 @@ structures:
     stability: 1
     value: 500
     productivity: 1
-  - name: Ropemakers (Trade Shop)
+  - name: Viol Inn
+    economy: 1
+    loyalty: 1
+    value: 500
+    society: 1
+  - name: Roper's and Weaver's Guild
+    economy: 2
+    loyalty: 2
+    law: 1
+    productivity: 2
+    value: 1000
+    lots: 2
+  - name: Fisherman's arsenal (Trade Shop)
     economy: 1
     stability: 1
     productivity: 1
@@ -288,9 +300,11 @@ structures:
     loyalty: 1
     economy: 1
     lore: 1
+  - name: Orphanage
+    stability: 1
 # Somewhere in Stagia
-  - name: House x 13
-    lots: 13
+  - name: House x 14
+    lots: 14
 events:
   - description: Capital
     economy: 1

@@ -1,17 +1,15 @@
-# Plan has been made to connect murkriver to the swamp, poorly thought out. 16 BP?
-
 name: Stagia
-unrest: 4
-treasury: 101
+unrest: 6
+treasury: 121
 infrastructure:
-  claimedHexes: 105
-  farms: 53
+  claimedHexes: 108
+  farms: 56
   fisheries: 1
   sawmills: 7
   quarries: 8
-  mines: 7
+  mines: 8
   roads: 43
-  rivers: 58
+  rivers: 60
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -101,7 +99,14 @@ modifiers:
   - cause: Built a canal into the swamp, through to Hooktown
     effects:
       economy: 1
-
+  - cause: Watchtower in the swamp (overseeing the trading routes)
+    effects:
+      stability: 1
+      # defence: 2 on itself
+  - cause: Watchtower in the mountain pass (towards Varnhold)
+    effects:
+      stability: 1
+      # defence: 2 on itself
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml

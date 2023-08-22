@@ -2,8 +2,8 @@ name: Sellgate
 population: 25
 districts: 1
 structures:
-  - name: Houses x1
-    lots: 1
+  - name: Houses x2
+    lots: 2
   - name: Pier
     economy: 1
     stability: 1
@@ -11,3 +11,13 @@ structures:
     crime: 1
   - name: Graveyard
     loyalty: 1
+  - name: Sellgate animal market (Stockyard)
+    economy: 1
+    stability: -1
+    productivity: 1
+    # Improves efficiency of nearby farms
+    consumption: -4
+  - name: Shrine of Abadar
+    loyalty: 1
+    # Magic item slot: 1 minor potion, scroll or wondrous
+    # Minor: 

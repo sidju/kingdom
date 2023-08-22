@@ -21,6 +21,11 @@ structures:
   - name: Varask's Weaponsmithy
     economy: 1
     loyalty: 1
+  - name: Yiggi's trappery (Exotic artisan)
+    economy: 1
+    stability: 1
+    # Magic item slots: 1 minor ring, wondrous or wand
+    # Minor: 
   - name: Barracks
     defense: 2
     law: 1
