@@ -25,16 +25,16 @@ modifiers:
       consumption: 4
   - cause: Large human army (garrisoned in Capital)
     effects:
-      income: -2
+      income: -4
   - cause: Medium dwarven defenders army (garrisoned in Capital)
     effects:
-      income: -2
+      income: -4
   - cause: Medium human barbarian army (garrisoned in Hooktown)
     effects:
-      income: -1
+      income: 0 # Wiped out
   - cause: River Navy (Medium human riverfolk) in Waterfront in Stagia
     effects:
-      income: -2
+      income: -4
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
       fame: 6
@@ -113,7 +113,7 @@ modifiers:
       loyalty: -2
       stability: -2
   - cause: Midnight Joust Mead ad
-    effect:
+    effects:
       economy: 2
 settlementPaths:
   - stagia.yaml
