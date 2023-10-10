@@ -1,6 +1,6 @@
 name: Stagia
-unrest: 6
-treasury: 121
+unrest: 3
+treasury: 140
 infrastructure:
   claimedHexes: 108
   farms: 56
@@ -107,6 +107,14 @@ modifiers:
     effects:
       stability: 1
       # defence: 2 on itself
+  - cause: Loss of medium army in Hooktown
+    effects:
+      economy: -2
+      loyalty: -2
+      stability: -2
+  - cause: Midnight Joust Mead ad
+    effect:
+      economy: 2
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml

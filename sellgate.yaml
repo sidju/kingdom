@@ -18,6 +18,6 @@ structures:
     # Improves efficiency of nearby farms
     consumption: -4
   - name: Shrine of Abadar
-    loyalty: 1
     # Magic item slot: 1 minor potion, scroll or wondrous
-    # Minor: 
+    # Minor: Potion of Cure Light Wounds
+    loyalty: 1

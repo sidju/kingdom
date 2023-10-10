@@ -64,12 +64,22 @@ structures:
     defense: 2
   # To build:
   # - Foundry, gets bonus from mine
-  - name: Houses x3
-    lots: 3
-  - name: Tenements x3
-    lots: 3
+  - name: Houses x6
+    lots: 6
+  - name: Tenements x1
+    lots: 1
   - name: Graveyard
     loyalty: 1
+  - name: Hospital (Cult of Urgathoa)
+    loyalty: 1
+    stability: 2
+    productivity: 2
+    lore: 1
+  - name: Herbalist (Preventatives and cures)
+    # Magic item slot: 1 minor potion or wondrous
+    # Minor: 
+    loyalty: 1
+    stability: 1
 events:
   - description: Strategic location
     economy: 1
@@ -84,6 +94,5 @@ events:
     loyalty: 1
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
-  - description: Plague (-6) (Full failure) Ongoing (+2 for next month (both checks))
+  - description: Plague (-6) (Full failure)
     stability: -4
-    # -5 treasury, +3 unrest
