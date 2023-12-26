@@ -10,8 +10,8 @@ districts: 1
 structures:
   - name: House x 4
     lots: 4
-  - name: Tenement x 3
-    lots: 3
+  - name: Tenement x 4
+    lots: 4
   - name: Foundry (handles metal from silvermine)
     lots: 2
     economy: 2
@@ -22,10 +22,10 @@ structures:
     economy: 1
     loyalty: 1
   - name: Yiggi's trappery (Exotic artisan)
+    # Magic item slots: 1 minor ring, wondrous or wand
+    # Minor: Wand of Create Pit (CL 3, 4500 gp)
     economy: 1
     stability: 1
-    # Magic item slots: 1 minor ring, wondrous or wand
-    # Minor: 
   - name: Barracks
     defense: 2
     law: 1
@@ -34,3 +34,5 @@ structures:
 events:
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+  - description: Smugglers
+    corruption: 2

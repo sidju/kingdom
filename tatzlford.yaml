@@ -53,6 +53,10 @@ structures:
     value: 500
   - name: Graveyard
     loyalty: 1
+  - name: Barracks
+    defense: 2
+    law: 1
+
 events:
   - description: Pre-annexation events
     corruption: -3
@@ -68,3 +72,9 @@ events:
   - description: Discovery of Taldan noble remnants (possibly vampire)
     fame: 1
     lore: 4
+  - description: Refugees from Hooktown, sent off so we can re-home them
+    # Bad stuff happens if we don't build homes for them
+    fame: -1
+    stability: -1
+  - description: Smugglers
+    corruption: 2

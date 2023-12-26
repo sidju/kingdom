@@ -36,3 +36,5 @@ structures:
 events:
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+  - description: Smugglers
+    corruption: 2

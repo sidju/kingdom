@@ -1,40 +1,58 @@
 name: Stagia
-unrest: 3
-treasury: 140
+unrest: 5
+treasury: 74
 infrastructure:
-  claimedHexes: 108
+  claimedHexes: 107 # Hooktown's hex tempoarily lost
   farms: 56
   fisheries: 1
   sawmills: 7
   quarries: 8
   mines: 8
-  roads: 43
+  roads: 45
   rivers: 60
 modifiers:
   - cause: Aggressive promotion edict
     effects:
       stability: 3
       consumption: 2
-  - cause: Normal taxation (affected by Waterfront in Stagia)
+  - cause: Low taxation (affected by Waterfront in Stagia)
     effects:
-      economy: 2
-      loyalty: -2
+      economy: 1
+      loyalty: -1
   - cause: 12 Holidays
     effects:
       loyalty: 3
       consumption: 4
-  - cause: Large human army (garrisoned in Capital)
+  - cause: Huge human army (garrisoned in Wyvernstone Hold)
     effects:
-      income: -4
+      income: -3
+  - cause: Huge human army (marching from Capital to wyvernstone)
+    effects:
+      income: -2
+  - cause: Large human army (garrisoned in wyvernstone)
+    effects:
+      income: -1
+  - cause: Large human army (garrisoned in Stagia)
+    effects:
+      income: -1
+  - cause: Large human fighter army (garrisoned in Tatzlford)
+    effects:
+      income: -1
   - cause: Medium dwarven defenders army (garrisoned in Capital)
     effects:
-      income: -4
-  - cause: Medium human barbarian army (garrisoned in Hooktown)
+      income: -1
+  - cause: River Navy (Medium human riverfolk) (garrisoned in Stagia Watefront)
     effects:
-      income: 0 # Wiped out
-  - cause: River Navy (Medium human riverfolk) in Waterfront in Stagia
+      income: -1
+  - cause: Medium halfling rogue army (scouting west of Wyvernstone Hold)
     effects:
-      income: -4
+      income: -3
+  - cause: Large Ranger army (scouting west of Wyvernstone Hold)
+    effects:
+      income: -3
+  - cause: Large human elite mounted knights (garrisoned in Wyvernstone Hold)
+    effects:
+      income: -8
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
       fame: 6
@@ -115,14 +133,30 @@ modifiers:
   - cause: Midnight Joust Mead ad
     effects:
       economy: 2
+  - cause: |
+      Lost armies: gargantuan Cobold, small monks, tiny gladiators and large human militia
+    effects:
+      economy: 7
+      loyalty: 5
+      stability: 4
+  - cause: Watchtower root of river west of hooktongue lake
+    # +2 defence if fighting at it
+    effects:
+      stability: 1
+  - cause: Watchtover at bridge west of Hooktown
+    # +2 defence if fighting at it
+    effects:
+      stability: 1
+
 settlementPaths:
   - stagia.yaml
   - sootscale-hold.yaml
   - varnhold.yaml
   - tatzlford.yaml
   - silverside.yaml
-  - hooktown.yaml
+#  - hooktown.yaml
   - nettleville.yaml
   - shrikethorn.yaml
   - crookfall.yaml
   - sellgate.yaml
+  - wyvernstone-hold.yaml

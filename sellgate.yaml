@@ -21,3 +21,7 @@ structures:
     # Magic item slot: 1 minor potion, scroll or wondrous
     # Minor: Potion of Cure Light Wounds
     loyalty: 1
+
+events:
+  - description: Smugglers
+    corruption: 2

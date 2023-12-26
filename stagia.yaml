@@ -1,6 +1,6 @@
 name: Stagia (capital)
 population: 12791
-walls: 4
+walls: 7
 districts: 4
 structures:
 # Central Stagia
@@ -32,7 +32,7 @@ structures:
     stability: 1
     productivity: 1
   - name: Granary
-    # Holds: 0 BP
+    # Holds: 4 BP
     loyalty: 1
     stability: 1
   - name: Hospital
@@ -56,7 +56,7 @@ structures:
     stability: 1
   - name: Cathedral of Irori (Knowledge)
     # Magic item slots: 3 minor potions or wondrous, 2 medium potions or wondrous
-    # Medium: Oil of Levitate
+    # Medium: Migrus locker (10 000gp)
     # Medium: Potion of Shield of Faith +4 (600gp)
     # Minor: Wasp nest of Swarms
     # Minor: Potion of Hide from Undead
@@ -74,7 +74,7 @@ structures:
     stability: 2
   - name: Dragn's Workshop (Armorsmith)
     # Magic item slot: 1 magic armor
-    # Armor: 
+    # Armor: +3 heavy steel shield (9170 gp)
     economy: 2
     stability: 1
   - name: Bocken's Shop (Alchemist)
@@ -197,7 +197,7 @@ structures:
     value: 2000
   - name: Black Market
     # Magic item slots: 2 minor, 1 medium, 1 major
-    # Major: +5 Holy Spear
+    # Major: 
     # Medium: Boundary chalk (10 000 gp)
     # Minor: Scroll of Resist energy (divine) (150 gp)
     # Minor: Scroll of Magic Weapon (25 gp)
@@ -364,6 +364,13 @@ events:
     law: 1
   - description: Sponsored the Lamashtu cult to start a nation
     infamy: 1
+  - description: Failure dealing with squatters
+    fame: -1
+    stability: -1
+  - description: Smugglers partial failure
+    corruption: 2
+    crime: 1
+    productivity: -3
 
 # To build:
 # - City walls facing water in core district

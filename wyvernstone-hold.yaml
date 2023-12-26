@@ -1,0 +1,24 @@
+name: Wyvernstone Hold
+population: 700
+walls: 4
+districts: 1
+structures:
+  - name: Wyvernhead Castle
+    # Discount: Noble Villa, Town Hall
+    economy: 2
+    loyalty: 2
+    stability: 2
+    fame: 1
+    defense: 8
+  - name: Main Garrison
+    # Discount: Granary
+    lots: 2
+    loyalty: 2
+    stability: 2
+  - name: Outrunner Barracks
+    defense: 2
+    law: 1
+
+events:
+  - description: Smugglers
+    corruption: 2

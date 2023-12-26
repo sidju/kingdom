@@ -27,3 +27,8 @@ structures:
 # - Granary
 # - Mill
 # - Trade Shop
+
+events:
+  - description: Smugglers
+    corruption: 2
+

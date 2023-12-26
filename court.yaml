@@ -32,7 +32,7 @@
   - Bog friend
   role: Treasurer
   bonus: # based on Intelligence or Wisdom
-    economy: 4
+    economy: 5
 # NPCs
 # All leveled when Stagia became a Kingdom
 - name: Svetlana

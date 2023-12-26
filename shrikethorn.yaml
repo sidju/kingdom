@@ -5,7 +5,7 @@ structures:
   - name: Houses x2
     lots: 2
   - name: Granary
-    # Holds: 2 BP
+    # Holds: 5 BP
     loyalty: 1
     stability: 1
   - name: Trade Shop
@@ -46,3 +46,5 @@ structures:
 events:
   - description: Political calm (kingdom wide effect on existing settlements)
     law: 1
+  - description: Smugglers
+    corruption: 2
