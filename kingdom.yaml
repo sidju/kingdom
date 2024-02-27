@@ -1,13 +1,13 @@
 name: Stagia
-unrest: 5
-treasury: 74
+unrest: 2
+treasury: 72
 infrastructure:
-  claimedHexes: 107 # Hooktown's hex tempoarily lost
+  claimedHexes: 111
   farms: 56
   fisheries: 1
   sawmills: 7
   quarries: 8
-  mines: 8
+  mines: 9
   roads: 45
   rivers: 60
 modifiers:
@@ -160,3 +160,4 @@ settlementPaths:
   - crookfall.yaml
   - sellgate.yaml
   - wyvernstone-hold.yaml
+  - hillriver-hold.yaml

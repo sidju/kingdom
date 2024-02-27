@@ -46,7 +46,7 @@ structures:
     stability: 2
   - name: Gem cutter (Exotic craftsman)
     # Magic item slot: 1 minor ring, wand or wondrous
-    # Minor: Ring of Jumping
+    # Minor: 
     economy: 1
     stability: 1
   - name: Brewery
@@ -54,6 +54,11 @@ structures:
     stability: 1
   - name: Graveyard
     loyalty: 1
+  - name: Jail
+    loyalty: 2
+    stability: 2
+    crime: -1
+    law: 1
 events:
   - description: Annexed for Stagia
     fame: 1

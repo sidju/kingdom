@@ -32,7 +32,7 @@ structures:
     stability: 1
     productivity: 1
   - name: Granary
-    # Holds: 4 BP
+    # Holds: 5 BP
     loyalty: 1
     stability: 1
   - name: Hospital
@@ -371,6 +371,9 @@ events:
     corruption: 2
     crime: 1
     productivity: -3
+  - description: Squatters dispersed
+    fame: -1
+    stability: -1
 
 # To build:
 # - City walls facing water in core district

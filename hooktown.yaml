@@ -77,7 +77,7 @@ structures:
     lore: 1
   - name: Herbalist (Preventatives and cures)
     # Magic item slot: 1 minor potion or wondrous
-    # Minor: 
+    # Minor: Potion of Protection from evil
     loyalty: 1
     stability: 1
 events:

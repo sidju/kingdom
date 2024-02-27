@@ -1,0 +1,19 @@
+name: Hillriver Hold
+population: 0
+walls: 3
+districts: 1
+structures:
+  - name: House x 2
+    lots: 2
+  - name: Barracks x 2
+    defense: 4
+    law: 2
+  - name: Veteran's Inn
+    economy: 1
+    loyalty: 1
+    society: 1
+  - name: Dance Hall
+    economy: 1
+    loyalty: 2
+    corruption: 1
+    crime: 1
