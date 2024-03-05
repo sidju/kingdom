@@ -197,7 +197,7 @@ structures:
     value: 2000
   - name: Black Market
     # Magic item slots: 2 minor, 1 medium, 1 major
-    # Major: 
+    # Major: Staff of Dark Flame (47 000 gp, CL 8)
     # Medium: Boundary chalk (10 000 gp)
     # Minor: Scroll of Resist energy (divine) (150 gp)
     # Minor: Scroll of Magic Weapon (25 gp)
@@ -371,9 +371,12 @@ events:
     corruption: 2
     crime: 1
     productivity: -3
-  - description: Squatters dispersed
+  - description: Squatters dispersed, no house built
     fame: -1
+    infamy: 1
     stability: -1
+  - description: Visit from Jemandi Aldori
+    fame: 1
 
 # To build:
 # - City walls facing water in core district

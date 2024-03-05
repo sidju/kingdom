@@ -1,8 +1,8 @@
 name: Stagia
-unrest: 2
-treasury: 72
+unrest: 4
+treasury: 65
 infrastructure:
-  claimedHexes: 111
+  claimedHexes: 115 # 4 not added to the map
   farms: 56
   fisheries: 1
   sawmills: 7
@@ -23,13 +23,13 @@ modifiers:
     effects:
       loyalty: 3
       consumption: 4
-  - cause: Huge human army (garrisoned in Wyvernstone Hold)
+  - cause: Huge human army (w. siege weapons) (sortieing from Wyvernstone Hold)
     effects:
-      income: -3
-  - cause: Huge human army (marching from Capital to wyvernstone)
+      income: -5
+  - cause: Huge human army (merged with army above)
     effects:
       income: -2
-  - cause: Large human army (garrisoned in wyvernstone)
+  - cause: Large human army (garrisoned in Hooktown)
     effects:
       income: -1
   - cause: Large human army (garrisoned in Stagia)
@@ -41,16 +41,13 @@ modifiers:
   - cause: Medium dwarven defenders army (garrisoned in Capital)
     effects:
       income: -1
-  - cause: River Navy (Medium human riverfolk) (garrisoned in Stagia Watefront)
+  - cause: River Navy (Medium human riverfolk) (at the ready in Hooktongue lake)
     effects:
       income: -1
   - cause: Medium halfling rogue army (scouting west of Wyvernstone Hold)
     effects:
       income: -3
-  - cause: Large Ranger army (scouting west of Wyvernstone Hold)
-    effects:
-      income: -3
-  - cause: Large human elite mounted knights (garrisoned in Wyvernstone Hold)
+  - cause: Large human elite mounted knights (sortieing from Wyvernstone Hold)
     effects:
       income: -8
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
@@ -147,6 +144,29 @@ modifiers:
     # +2 defence if fighting at it
     effects:
       stability: 1
+  - cause: Lost large elven rangers army against Pitax
+    effects:
+      economy: -3
+      stability: -2
+      loyalty: -2
+  - cause: Killed Kob Moleg (wanted mercenary)
+    effects:
+      stability: 2
+  - cause: Won the war against Pitax
+    effects:
+      fame: 1
+  - cause: Exploration edict to the plains north of Pitax
+  # 4 BP paid
+  - cause: Exploration edict to the woods north of Pitax
+  # 6 BP paid
+  - cause: Watchtover at the channel east of the swamp
+    # +2 defence if fighting at it
+    effects:
+      stability: 1
+  - cause: Watchtower at Oleg's trading post
+    # +2 defence if fighting at it
+    effects:
+      stability: 1
 
 settlementPaths:
   - stagia.yaml
@@ -154,7 +174,7 @@ settlementPaths:
   - varnhold.yaml
   - tatzlford.yaml
   - silverside.yaml
-#  - hooktown.yaml
+  - hooktown.yaml
   - nettleville.yaml
   - shrikethorn.yaml
   - crookfall.yaml

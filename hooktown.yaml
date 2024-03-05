@@ -96,3 +96,6 @@ events:
     law: 1
   - description: Plague (-6) (Full failure)
     stability: -4
+  - description: Ruined (Remains for half a year, until Gozreh next year)
+    economy: -6
+    purchaseLimitMultiplier: 0.5
