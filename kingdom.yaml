@@ -1,14 +1,14 @@
 name: Stagia
-unrest: 4
-treasury: 65
+unrest: 3
+treasury: 84
 infrastructure:
-  claimedHexes: 115 # 4 not added to the map
-  farms: 56
+  claimedHexes: 119
+  farms: 58
   fisheries: 1
   sawmills: 7
-  quarries: 8
-  mines: 9
-  roads: 45
+  quarries: 9
+  mines: 11
+  roads: 47
   rivers: 60
 modifiers:
   - cause: Aggressive promotion edict
@@ -23,10 +23,10 @@ modifiers:
     effects:
       loyalty: 3
       consumption: 4
-  - cause: Huge human army (w. siege weapons) (sortieing from Wyvernstone Hold)
+  - cause: Huge human army (w. siege weapons) (garrisoned in Wyvernstone Hold main garrison)
     effects:
       income: -5
-  - cause: Huge human army (merged with army above)
+  - cause: Huge human army (active)
     effects:
       income: -2
   - cause: Large human army (garrisoned in Hooktown)
@@ -41,13 +41,13 @@ modifiers:
   - cause: Medium dwarven defenders army (garrisoned in Capital)
     effects:
       income: -1
-  - cause: River Navy (Medium human riverfolk) (at the ready in Hooktongue lake)
+  - cause: River Navy (Medium human riverfolk) (Garrisoned in Capital)
     effects:
       income: -1
-  - cause: Medium halfling rogue army (scouting west of Wyvernstone Hold)
+  - cause: Medium halfling rogue army (garrisoned in Wyvernstone Hold Outrunner Barracks)
     effects:
       income: -3
-  - cause: Large human elite mounted knights (sortieing from Wyvernstone Hold)
+  - cause: Large human elite mounted knights (garrisoned in Wyvernstone Hold Castle)
     effects:
       income: -8
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
