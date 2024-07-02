@@ -19,6 +19,12 @@ structures:
     productivity: 1
     # Improves adjascent farms
     consumption: -6
+  - name: Tannery
+    economy: 1
+    stability: 1
+  - name: Smithy
+    economy: 1
+    stability: 1
 
 # To build:
 # - Pier x2 (one above and one below the falls)

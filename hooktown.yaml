@@ -13,6 +13,11 @@ structures:
     loyalty: 2
     corruption: 1
     crime: 1
+  - name: Dance Hall
+    economy: 1
+    loyalty: 2
+    corruption: 1
+    crime: 1
   - name: Hooktown Keep (Castle)
     economy: 2
     loyalty: 2
@@ -55,7 +60,7 @@ structures:
     corruption: 1
   - name: Temple of Erastil
     # Magic item slot: 2 minor
-    # Minor: 
+    # Minor: Scroll of Web
     # Minor: Equestrian Belt (3200 gp, CL 3)
     loyalty: 2
     stability: 2
@@ -79,6 +84,8 @@ structures:
     # Magic item slot: 1 minor potion or wondrous
     # Minor: Potion of Protection from evil
     loyalty: 1
+    stability: 1
+  - name: Dump
     stability: 1
 events:
   - description: Strategic location

@@ -37,7 +37,7 @@ structures:
     economy: 1
     stability: 1
   - name: Granary
-    # Holds: 0 BP
+    # Holds: 5 BP
     loyalty: 1
     stability: 1
   - name: Garrison
@@ -46,7 +46,7 @@ structures:
     stability: 2
   - name: Gem cutter (Exotic craftsman)
     # Magic item slot: 1 minor ring, wand or wondrous
-    # Minor: 
+    # Minor: Ring of Ferocious Action
     economy: 1
     stability: 1
   - name: Brewery

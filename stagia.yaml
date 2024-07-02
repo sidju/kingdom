@@ -260,7 +260,7 @@ structures:
     value: 500
   - name: Ye Olde Magic Shop
     # Magic item slots: 4 minor wondrous, 2 medium wondrous, 1 major wondrous
-    # Major: Mantle of Immortality (50 000 gp)
+    # Major: 
     # Medium: Minor Cloak of Displacement (permanent blur) 24 000gp
     # Minor: Pirate's eye-patch (2600 gp)
     # Minor: Phylactery of Positive Channeling (11 000 gp)

@@ -29,6 +29,10 @@ structures:
     productivity: 1
     # Improves adjacent farms
     consumption: -5
+  - name: Tannery
+    economy: 1
+    stability: 1
+    society: -1
   - name: Graveyard
     loyalty: 1
   - name: Shrine of Erastil

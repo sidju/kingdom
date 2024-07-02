@@ -2,8 +2,8 @@ name: Nettleville
 population: 1225
 districts: 1
 structures:
-  - name: Houses x3
-    lots: 3
+  - name: Houses x4
+    lots: 4
   - name: Nettleville animal market (Stockyard)
     economy: 1
     stability: -1
@@ -19,7 +19,7 @@ structures:
     stability: 1
     productivity: 1
   - name: Granary
-    # Holds: 0 BP
+    # Holds: 5 BP
     loyalty: 1
     stability: 1
   - name: Shrine of Erastil
@@ -42,6 +42,16 @@ structures:
     economy: 1
     society: 1
     value: 500
+  - name: Smithy x2
+    stability: 2
+    economy: 2
+  - name: Tannery x2
+    stability: 2
+    economy: 2
+  - name: Mill
+    stability: 1
+    economy: 1
+    productivity: 1
 
 # To build:
 # - Barracks

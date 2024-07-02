@@ -17,6 +17,10 @@ structures:
     productivity: 1
     # Improves efficiency of nearby farms
     consumption: -4
+  - name: Tannery
+    economy: 1
+    stability: 1
+    society: -1
   - name: Shrine of Abadar
     # Magic item slot: 1 minor potion, scroll or wondrous
     # Minor: Potion of Cure Light Wounds

@@ -1,15 +1,15 @@
 name: Stagia
-unrest: 3
-treasury: 84
+unrest: 0
+treasury: 74
 infrastructure:
-  claimedHexes: 119
-  farms: 58
+  claimedHexes: 127
+  farms: 63
   fisheries: 1
   sawmills: 7
   quarries: 9
   mines: 11
-  roads: 47
-  rivers: 60
+  roads: 55
+  rivers: 61
 modifiers:
   - cause: Aggressive promotion edict
     effects:
@@ -26,7 +26,7 @@ modifiers:
   - cause: Huge human army (w. siege weapons) (garrisoned in Wyvernstone Hold main garrison)
     effects:
       income: -5
-  - cause: Huge human army (active)
+  - cause: Huge human army (garrisoned in Hillriver hold)
     effects:
       income: -2
   - cause: Large human army (garrisoned in Hooktown)
@@ -35,7 +35,7 @@ modifiers:
   - cause: Large human army (garrisoned in Stagia)
     effects:
       income: -1
-  - cause: Large human fighter army (garrisoned in Tatzlford)
+  - cause: Large human fighter army (garrisoned in Hooktown)
     effects:
       income: -1
   - cause: Medium dwarven defenders army (garrisoned in Capital)
@@ -44,12 +44,12 @@ modifiers:
   - cause: River Navy (Medium human riverfolk) (Garrisoned in Capital)
     effects:
       income: -1
-  - cause: Medium halfling rogue army (garrisoned in Wyvernstone Hold Outrunner Barracks)
-    effects:
-      income: -3
-  - cause: Large human elite mounted knights (garrisoned in Wyvernstone Hold Castle)
+  - cause: Large human elite mounted knights (Carefully patrolling around Wyvernstone Hold 18th)
     effects:
       income: -8
+  - cause: Cobold army (Staven knows)
+    effects:
+      income: -1
   - cause: Existence/size fame (+1 more at 1, 11, 26, 51, 101 and 201)
     effects:
       fame: 6
@@ -167,6 +167,17 @@ modifiers:
     # +2 defence if fighting at it
     effects:
       stability: 1
+  - cause: Loss of halfling army
+    effects:
+      economy: -2
+      stability: -2
+      loyalty: -2
+  - cause: Trade Route to Numeria
+    effects:
+      economy: 2
+  - cause: Slayed the Eater of Kings
+    effects:
+      loyalty: 2
 
 settlementPaths:
   - stagia.yaml
