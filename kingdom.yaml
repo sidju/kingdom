@@ -178,6 +178,10 @@ modifiers:
   - cause: Slayed the Eater of Kings
     effects:
       loyalty: 2
+  - cause: Slay the Ettins
+    effects:
+      stability: 2
+      loyalty: 2
 
 settlementPaths:
   - stagia.yaml
