@@ -182,6 +182,9 @@ modifiers:
     effects:
       stability: 2
       loyalty: 2
+  - cause: Killed Ilthuliak
+    effects:
+      economy: 4
 
 settlementPaths:
   - stagia.yaml
